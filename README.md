@@ -50,7 +50,7 @@ $ npm update
 
 #### Step 6
 
-Remove and re-intialise the git file if you wish to use git to manage your project
+Remove and re-intialise the git file if you wish to use git to manage your project.
 
 ## Authors
 
