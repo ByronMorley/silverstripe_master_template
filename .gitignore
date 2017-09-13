@@ -1,0 +1,36 @@
+# ignore cache folder
+/silverstripe-cache/
+
+# ignore all environment files
+_ss_environment.php
+
+# ignore build tools
+/tools/phing-metadata
+
+# ignore composer vendor folder
+/vendor/
+/themes/base/node_modules/
+/assets/
+/themes/base/app/node_modules/
+/googlesitemaps/
+/segment-field/
+/reports/
+/gridfieldextensions/
+/betterbuttons/
+/focuspoint/
+/spamprotection/
+/colorpicker/
+/silverstripe-branding/
+/framework/
+/email-helpers/
+/dynamiccache/
+/sortablefile/
+/cms/
+/userforms/
+/linkable/
+/siteconfig/
+/translatable/
+/robots/
+/display_logic/
+/nocaptcha/
+/.idea/
