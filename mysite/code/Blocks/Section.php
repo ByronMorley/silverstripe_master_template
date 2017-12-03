@@ -4,7 +4,7 @@ class Section extends DataObject
 {
 
     private static $db = array(
-        'Title' => 'Varchar',
+        'Title' => 'Varchar(200)',
         'SortOrder' => 'Int',
         'ShowTitle' => 'Boolean'
     );
@@ -12,7 +12,7 @@ class Section extends DataObject
     private static $default_sort = 'SortOrder ASC';
 
     private static $has_one = array(
-        'Page' => 'Page'
+        'ModulePage' => 'ModulePage'
     );
 
     public function getCMSFields()
@@ -39,7 +39,7 @@ class Section extends DataObject
 
     public function populateDefaults()
     {
-        $this->Title = $this->ClassName;// . " " . $this->RunningTotal();
+        $this->Title = $this->ClassName . " " . $this->RunningTotal();
         parent::populateDefaults();
     }
 

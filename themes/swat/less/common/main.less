@@ -1,0 +1,66 @@
+@import "../_core/_config.less";
+
+/*-----------------------------------------
+                MAIN.LESS
+-----------------------------------------*/
+
+/**
+    SM - switch to mobile view
+ */
+
+body {
+    background-image: @background-image;
+    padding-bottom:100px;
+}
+
+.container {
+
+    padding: 0;
+    height: 100%;
+
+
+    @media @XS, @XXS   {
+      padding:0 5px;
+    }
+
+    .inner-container {
+        height: 100%;
+        float: left;
+
+        &.left, &.right {
+
+            @media @XL {
+                width: 180px;
+            }
+            @media @LG {
+                width: 160px;
+            }
+            @media @MD {
+                width: 140px;
+            }
+        }
+
+        &.middle {
+
+            @media @XL {
+                width: 810px;
+            }
+            @media @LG {
+                width: 850px;
+            }
+            @media @MD {
+                width: 690px;
+            }
+
+            &.alone {
+                float: none;
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+article {
+    margin-bottom:10px;
+}
+

@@ -1,0 +1,120 @@
+@import "../_core/_config.less";
+
+/*-----------------------------------------
+                HEADER.LESS
+-----------------------------------------*/
+
+@header-color: @config-header-color;
+
+header {
+
+    //margin-bottom: 10px;
+    position: relative;
+    z-index: 101;
+    overflow:visible;
+    height:auto;
+    background-color: @header-color;
+
+    width: 100%;
+
+    @media @XL {
+        height: 90px;
+    }
+    @media @LG {
+        height: 80px;
+    }
+    @media @MD {
+        height: 70px;
+    }
+    @media @SM {
+        height: 60px;
+        margin-bottom:13px;
+    }
+    @media @XS {
+        height: 50px;
+        margin-bottom:13px;
+    }
+    @media @XXS {
+        height: 40px;
+        margin-bottom:13px;
+    }
+
+    .title-section {
+        float: left;
+        background-color: #fff;
+        height: ~"calc(100% - 10px)";
+
+        @media @XL {
+            width: ~"calc(100% - 170px)";
+        }
+        @media @LG {
+            width: ~"calc(100% - 150px)";
+        }
+        @media @MD {
+            width: ~"calc(100% - 130px)";
+        }
+        @media @SM {
+            width: ~"calc(100% - 110px)";
+        }
+        @media @XS {
+            width: ~"calc(100% - 90px)";
+        }
+        @media @XXS {
+            width: ~"calc(100% - 70px)";
+        }
+
+        h1 {
+            font-family: @font-semi-bold;
+            padding: 0 10px;
+
+            @media @XL {
+                line-height: 80px;
+            }
+            @media @LG {
+                line-height: 70px;
+            }
+            @media @MD {
+                line-height: 60px;
+            }
+            @media @SM {
+                line-height: 50px;
+            }
+            @media @XS {
+                line-height: 40px;
+            }
+            @media @XXS {
+                line-height: 30px;
+            }
+        }
+    }
+    .mobile .title-section {
+
+        h1 {
+            text-align: center;
+        }
+    }
+
+    .desktop {
+
+        margin-top: 10px;
+    }
+
+    .mobile {
+        margin-top: 0;
+        width: 100%;
+        overflow: hidden;
+        height: 100%;
+        background-color: #fff;
+        padding: 5px;
+        position: relative;
+
+
+    }
+
+    a {
+        display: block;
+        float: left;
+    }
+
+}
+

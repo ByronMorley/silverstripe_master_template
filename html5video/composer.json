@@ -1,0 +1,25 @@
+{
+  "name": "dynamic/silverstripe-html5video",
+  "type": "silverstripe-module",
+  "description": "html5video is a SilverStripe video module for html5.",
+  "homepage": "http://dynamicagency.org",
+  "license": "BSD-3-Clause",
+  "keywords": ["silverstripe", "html5", "video", "dynamic"],
+  "authors": [
+    {
+      "name": "Dynamic Inc",
+      "homepage": "http://dynamicagency.com",
+      "email": "dev@dynamicagency.com"
+    }
+  ],
+  "require": {
+    "silverstripe/framework": "^3.1",
+    "silverstripe/cms": "^3.1"
+  },
+  "suggest": {
+    "micschk/silverstripe-chunkeduploadfield": "Allows for large file uploads in CMS"
+  },
+  "extra": {
+    "installer-name": "html5video"
+  }
+}

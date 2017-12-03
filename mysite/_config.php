@@ -8,9 +8,17 @@ $project = 'mysite';
  *       DATABASE
  *************************/
 
-// Use _ss_environment.php file for configuration
-require_once("conf/ConfigureFromEnv.php");
+global $databaseConfig;
+$databaseConfig = array(
+    'type' => 'MySQLDatabase',
+    'server' => 'localhost',
+    'username' => 'root',
+    'password' => 'Castle10',
+    'database' => 'ss_swat',
+    'path' => ''
+);
 
+Security::setDefaultAdmin("admin","Castle10");
 /**************************
  *       LOCALE
  *************************/
@@ -68,3 +76,5 @@ if (Director::isTest()) {
 
 Object::add_extension('SiteTree', 'Translatable');
 Object::add_extension('SiteConfig', 'Translatable'); // 2.4 or newer only
+Object::useCustomClass('MemberLoginForm', 'CustomMemberLoginForm');
+Object::add_extension('Member', 'CustomMember');

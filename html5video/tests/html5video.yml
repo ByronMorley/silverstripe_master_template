@@ -1,0 +1,69 @@
+Group:
+  ADMIN:
+    Title: Admin
+    Code: ADMIN
+  CONTENTAUTHORS:
+    Title: Content Authors
+    Code: content-authors
+Permission:
+  CMSACCESSMAIN:
+    Code: CMS_ACCESS_CMSMain
+    Type: 1
+    Group: =>Group.CONTENTAUTHORS
+  CMSACCESSASSETADMIN:
+    Code: CMS_ACCESS_AssetAdmin
+    Type: 1
+    Group: =>Group.CONTENTAUTHORS
+  CMSACCESSREPORTADMIN:
+    Code: CMS_ACCESS_ReportAdmin
+    Type: 1
+    Group: =>Group.CONTENTAUTHORS
+  CMSACCESSREORGANISE:
+    Code: SITETREE_REORGANISE
+    Type: 1
+    Group: =>Group.CONTENTAUTHORS
+Member:
+  JonDoe:
+    FirstName: Jon
+    Surname: Doe
+    Groups: =>Group.CONTENTAUTHORS
+  JaneDoe:
+    FirstName: Jane
+    Surname: Doe
+VideoGroup:
+  VideoGroupA:
+    Title: Video Group A
+  VideoGroupB:
+    Title: Video Group B
+  VideoGroupC:
+    Title: Video Group C
+    Parent: =>VideoGroup.VideoGroupA
+  VideoGroupD:
+    Title: Video Group D
+    ShowInMenus: false
+    Parent: =>VideoGroup.VideoGroupA
+Video:
+  Video1:
+    Title: Video 1
+    Time: 3:45
+    Parent: =>VideoGroup.VideoGroupA
+  Video2:
+    Title: Video 2
+    Time: 1:23
+    Parent: =>VideoGroup.VideoGroupA
+  Video3:
+    Title: Video 3
+    Time: 2:34
+    Parent: =>VideoGroup.VideoGroupB
+  Video4:
+    Title: Video 4
+    Time: 25:13
+    Parent: =>VideoGroup.VideoGroupB
+  Video5:
+    Title: Video 5
+    Time: 2:44
+    ParentID: 0
+  Video6:
+    Title: Video 6
+    Time: 3:55
+    Parent: =>VideoGroup.VideoGroupD

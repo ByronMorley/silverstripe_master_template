@@ -1,0 +1,65 @@
+@import "../_core/_config.less";
+
+/*-----------------------------------------
+          BUTTON.LESS
+-----------------------------------------*/
+
+.button {
+
+    display:block;
+    padding:15px 60px;
+
+    @media @SM , @XS, @XXS{
+
+        margin-top:0px;
+        width:100%;
+
+        span {
+
+            width:100%;
+            display:table;
+            text-align: center;
+        }
+    }
+
+    span {
+
+        @media @XL {
+
+            font-size: 36px;
+        }
+        @media @LG {
+            font-size: 30px;
+        }
+        @media @MD {
+            font-size: 26px;
+        }
+        @media @SM {
+            font-size: 20px;
+        }
+        @media @XS {
+            font-size: 18px;
+        }
+        @media @XXS {
+            font-size: 20px;
+        }
+    }
+
+    &.full {
+        margin-bottom:10px;
+        width:100%;
+
+        span {
+
+            width:100%;
+            display:table;
+            text-align: center;
+        }
+    }
+    &.no-margin {
+        margin-bottom:0px;
+    }
+
+
+
+}

@@ -1,0 +1,85 @@
+@import "../_core/_config.less";
+
+/*------------------------------------------
+			EVALUATION FORM
+-------------------------------------------*/
+
+.evaluation h3{
+	border-bottom:1px solid #000;
+	margin:00px 10px 20px 10px;
+	line-height:45px;
+	padding:10px 20px 20px 0px;
+}
+.eval-choice {
+	clear:both;
+}
+.eval-choice p {
+	float:left;
+}
+
+.eval-choice textarea {
+	width:80%;
+	height:100px;
+	border:1px solid #000;
+	padding:5px;
+	margin:0 0 0 70px;
+	resize:vertical;
+	clear:both;
+}
+
+.eval-choice textarea.fold {
+	height:0px;
+	display:none;
+}
+.eval-choice textarea.unfold {
+	display:block;
+}
+
+
+.evaluation ul {
+	padding:0;
+	margin:0;
+	overflow:hidden;
+}
+
+.evaluation ul li {
+	margin:10px 0 5px 0;
+	overflow:hidden;
+}
+ul.survey>li {
+	margin:0;
+}
+
+
+.tick-box {
+	width:30px;
+	height:30px;
+	background-color:#fff;
+	border:1px solid #000;
+	float:left;
+	margin:0px 30px 10px 10px;
+	cursor:pointer;
+}
+
+.tick-box.empty:hover {
+	border:1px solid #E6463A;
+	background-image:url("../assets/icons/tick_icon_small.jpg");
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+.tick-box.checked {
+	/*background-color:#E6463A;*/
+	border:1px solid #E6463A;
+	background-image:url("../assets/icons/tick_icon_small.jpg");
+	background-repeat: no-repeat;
+	background-size: contain;
+}
+
+.evaluation .comments {
+	margin:0 0 0 10px;
+	width:90%;
+	height:150px;
+	border:1px solid #000;
+	resize:vertical;
+	clear:both;
+}

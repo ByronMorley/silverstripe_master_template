@@ -1,0 +1,67 @@
+@import "../_core/_config.less";
+
+/*-----------------------------------------
+            MODULE BOX.LESS
+-----------------------------------------*/
+
+
+.module-choices {
+
+    overflow:hidden;
+    margin:0 !important;
+    padding:0;
+
+    &>li {
+        margin:0;
+        padding:0;
+        float:left;
+        border:1px solid @light-grey;
+        border-bottom:1px solid @dark-color;
+        width:50%;
+        cursor:pointer;
+
+
+        .title {
+            color:@light-color;
+            background-color: @light-grey;
+        }
+
+        &.active {
+
+            &:nth-child(odd){
+                border-top:1px solid @light-color;
+                border-right:1px solid @dark-color;
+                border-bottom:1px solid @dark-color;
+                border-left:1px solid @light-color;
+            }
+            &:nth-child(even){
+                border-top:1px solid @light-color;
+                border-right:1px solid @light-color;
+                border-bottom:1px solid @dark-color;
+                border-left:1px solid @dark-color;
+            }
+
+
+
+
+
+            .title {
+                background-color: @light-color;
+                color:@dark-color;
+            }
+
+        }
+
+    }
+
+}
+
+.module-intro-text {
+
+    padding:10px;
+
+    display:none;
+    &.active {
+        display:block;
+    }
+}

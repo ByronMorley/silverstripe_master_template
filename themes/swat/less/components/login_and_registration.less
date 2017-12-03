@@ -1,0 +1,70 @@
+@import "../_core/_config.less";
+
+/*-----------------------------------------
+       LOGIN AND REGISTRATION.LESS
+-----------------------------------------*/
+
+.login_and_register_module {
+
+    width:500px;
+    margin:0 auto 10px;
+    background-color:#fff;
+
+    @media  @XS, @XXS {
+        width:100%;
+        margin:0 0 10px 0;
+    }
+
+    .title {
+
+        font-family: @font-reg;
+        color:@alpha-color;
+        text-align: center;
+        padding:15px;
+        border-bottom:1px solid #000;
+    }
+
+    .login-text {
+        padding:10px;
+        text-align: center;
+    }
+
+    .field {
+        label {
+            width:~"calc(40% - 20px)";
+            margin:5px 10px;
+            line-height:30px;
+            text-align: right;
+
+            @media @XS, @XXS {
+                width:~"calc(100% - 20px)";
+                text-align: left;
+            }
+        }
+
+        input {
+            width:~"calc(60% - 20px)";
+            margin:5px 10px;
+            border:1px solid @light-grey;
+            line-height:30px;
+            @media @XS, @XXS {
+                width:~"calc(100% - 20px)";
+            }
+        }
+    }
+
+    form {
+        padding-bottom:10px;
+    }
+
+    #Form_RegisterForm_action_register,
+    #CustomMemberLoginForm_LostPasswordForm_action_forgotPassword,
+    #CustomMemberLoginForm_LoginForm_Remember_Holder,
+    #CustomMemberLoginForm_LoginForm_action_dologin {
+        display:none;
+    }
+}
+#ForgotPassword {
+    text-align:right;
+    padding:10px;
+}

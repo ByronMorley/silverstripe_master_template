@@ -1,0 +1,130 @@
+@import "../_core/_config.less";
+
+/*-----------------------------------------
+               ICONS.LESS
+-----------------------------------------*/
+
+.icon {
+
+    @media @XL {
+        width: 80px;
+        height: 80px;
+    }
+    @media @LG {
+        width: 70px;
+        height: 70px;
+    }
+    @media @MD {
+        width: 60px;
+        height: 60px;
+    }
+    @media @SM {
+        width: 50px;
+        height: 50px;
+    }
+    @media @XS {
+        width: 40px;
+        height: 40px;
+    }
+    @media @XXS {
+        width: 30px;
+        height: 30px;
+    }
+
+    img {
+        height: 100%;
+        width: 100%;
+    }
+
+    &.home {
+        @media @XL {
+            width: 90px;
+            height: 80px;
+        }
+        @media @LG {
+            width: 80px;
+            height: 70px;
+        }
+        @media @MD {
+            width: 70px;
+            height: 60px;
+        }
+        @media @SM {
+            width: 60px;
+            height: 50px;
+        }
+        @media @XS {
+            width: 50px;
+            height: 40px;
+        }
+        @media @XXS {
+            width: 40px;
+            height: 30px;
+        }
+    }
+
+    &.red {
+        position: relative;
+        background-color: @alpha-color;
+        margin-left: 10px;
+        float: left;
+
+        &.right {
+            float: right;
+            margin-left: 0px;
+        }
+
+        .icon-label {
+
+            position: absolute;
+            left: 5px;
+            top: 5px;
+            display: none;
+
+            @media @XL {
+                width: 70px;
+                height: 70px;
+            }
+            @media @LG {
+                width: 60px;
+                height: 60px;
+            }
+            @media @MD {
+                width: 50px;
+                height: 50px;
+            }
+
+            p {
+                display: table-cell;
+                vertical-align: middle;
+                text-align: center;
+
+                color: #fff;
+                font-family: @font-bold;
+
+                @media @XL {
+                    font-size: 16px;
+                }
+                @media @LG {
+                    font-size: 14px;
+                }
+                @media @MD {
+                    font-size: 12px;
+                }
+            }
+        }
+
+        &:hover {
+            .icon-label {
+                display: table;
+            }
+            .image {
+                display: none;
+            }
+        }
+    }
+}
+
+.inner-icon {
+    margin: 0 !important;
+}

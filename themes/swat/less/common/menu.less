@@ -1,0 +1,112 @@
+@import "../_core/_config.less";
+
+/*-----------------------------------------
+               MENU.LESS
+-----------------------------------------*/
+
+
+.main-menu {
+
+	margin:0 !important;
+	overflow: hidden;
+
+	@media @SM, @XS, @XXS {
+
+		margin-bottom:10px !important;
+	}
+
+	li {
+		float:left;
+		margin-right:10px;
+		margin-bottom:10px;
+
+		width:~"calc(25% - 8px)";
+
+		@media @SM {
+
+			width:~"calc(50% - 5px)";
+			margin:0;
+			&:nth-child(odd){
+				margin-right:10px;
+			}
+			margin-bottom:10px;
+
+		}
+		@media @XS, @XXS  {
+
+			width:~"calc(50% - 5px)";
+			margin:0;
+			&:nth-child(odd){
+				margin-right:10px;
+			}
+			margin-bottom:10px;
+		}
+
+
+
+		&:nth-child(4), &:nth-child(8) {
+			margin-right:0;
+		}
+
+		&:hover {
+			cursor:pointer;
+			border:1px solid @alpha-color;
+			background-color:#fff;
+			h4 {
+				color:@alpha-color;
+			}
+		}
+		h4 {
+			font-family: @font-reg;
+			text-align: center;
+			font-size:30px;
+			@media @SM {
+				font-size:42px;
+			}
+			@media @XS  {
+				font-size:36px;
+			}
+			@media @XXS  {
+				font-size:24px;
+			}
+		}
+	}
+}
+
+
+.light-grey-style {
+	background-color: #DEDEDE;
+	border:1px solid #DEDEDE;
+}
+
+.light-grey-style h4 {
+	color:#000;
+}
+
+.medium-grey-style {
+	background-color:#C3C3C3;
+	border:1px solid #C3C3C3;
+}
+
+.medium-grey-style h4 {
+	color:#fff;
+}
+
+.dark-grey-style {
+	background-color:#9C9C9C;
+	border:1px solid #9C9C9C;
+}
+
+.dark-grey-style h4{
+	color:#fff;
+}
+
+.red-style {
+	background-color:#E64439;
+	border:1px solid #E64439;
+}
+
+.red-style h4{
+	color:#fff;
+	font-weight:bold;
+}

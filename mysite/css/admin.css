@@ -1,13 +1,1549 @@
 .cms-warning-label {
 
-	padding:20px 10px;
-	color:#991c1a;
-	background-color: #eee;
-	text-align: center;
-	font-size:16px;
-	border:1px solid #991c1a;
+    padding: 20px 10px;
+    color: #991c1a;
+    background-color: #eee;
+    text-align: center;
+    font-size: 16px;
+    border: 1px solid #991c1a;
 }
 
-#Root_Sections fieldset{
-	min-height:500px;
+#Root_Sections fieldset {
+    min-height: 500px;
+}
+
+.next-line {
+    clear: both;
+}
+
+.score {
+    padding-top: 40px !important;
+}
+
+h2.center-align {
+    text-align: center;
+}
+
+.cms-content.cms-edit-form.cms-tabset {
+    overflow: scroll;
+}
+/*
+#Root_EnglishStatistics html,
+#Root_WelshStatistics html {
+    font-family: sans-serif;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+#Root_EnglishStatistics body,
+#Root_WelshStatistics body {
+    margin: 0;
+}
+#Root_EnglishStatistics article,
+#Root_WelshStatistics article,
+#Root_EnglishStatistics aside,
+#Root_WelshStatistics aside,
+#Root_EnglishStatistics details,
+#Root_WelshStatistics details,
+#Root_EnglishStatistics figcaption,
+#Root_WelshStatistics figcaption,
+#Root_EnglishStatistics figure,
+#Root_WelshStatistics figure,
+#Root_EnglishStatistics footer,
+#Root_WelshStatistics footer,
+#Root_EnglishStatistics header,
+#Root_WelshStatistics header,
+#Root_EnglishStatistics hgroup,
+#Root_WelshStatistics hgroup,
+#Root_EnglishStatistics main,
+#Root_WelshStatistics main,
+#Root_EnglishStatistics menu,
+#Root_WelshStatistics menu,
+#Root_EnglishStatistics nav,
+#Root_WelshStatistics nav,
+#Root_EnglishStatistics section,
+#Root_WelshStatistics section,
+#Root_EnglishStatistics summary,
+#Root_WelshStatistics summary {
+    display: block;
+}
+#Root_EnglishStatistics audio,
+#Root_WelshStatistics audio,
+#Root_EnglishStatistics canvas,
+#Root_WelshStatistics canvas,
+#Root_EnglishStatistics progress,
+#Root_WelshStatistics progress,
+#Root_EnglishStatistics video,
+#Root_WelshStatistics video {
+    display: inline-block;
+    vertical-align: baseline;
+}
+#Root_EnglishStatistics audio:not([controls]),
+#Root_WelshStatistics audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+#Root_EnglishStatistics [hidden],
+#Root_WelshStatistics [hidden],
+#Root_EnglishStatistics template,
+#Root_WelshStatistics template {
+    display: none;
+}
+#Root_EnglishStatistics a,
+#Root_WelshStatistics a {
+    background-color: transparent;
+}
+#Root_EnglishStatistics a:active,
+#Root_WelshStatistics a:active,
+#Root_EnglishStatistics a:hover,
+#Root_WelshStatistics a:hover {
+    outline: 0;
+}
+#Root_EnglishStatistics abbr[title],
+#Root_WelshStatistics abbr[title] {
+    border-bottom: 1px dotted;
+}
+#Root_EnglishStatistics b,
+#Root_WelshStatistics b,
+#Root_EnglishStatistics strong,
+#Root_WelshStatistics strong {
+    font-weight: bold;
+}
+#Root_EnglishStatistics dfn,
+#Root_WelshStatistics dfn {
+    font-style: italic;
+}
+#Root_EnglishStatistics h1,
+#Root_WelshStatistics h1 {
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+#Root_EnglishStatistics mark,
+#Root_WelshStatistics mark {
+    background: #ff0;
+    color: #000;
+}
+#Root_EnglishStatistics small,
+#Root_WelshStatistics small {
+    font-size: 80%;
+}
+#Root_EnglishStatistics sub,
+#Root_WelshStatistics sub,
+#Root_EnglishStatistics sup,
+#Root_WelshStatistics sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+#Root_EnglishStatistics sup,
+#Root_WelshStatistics sup {
+    top: -0.5em;
+}
+#Root_EnglishStatistics sub,
+#Root_WelshStatistics sub {
+    bottom: -0.25em;
+}
+#Root_EnglishStatistics img,
+#Root_WelshStatistics img {
+    border: 0;
+}
+#Root_EnglishStatistics svg:not(:root),
+#Root_WelshStatistics svg:not(:root) {
+    overflow: hidden;
+}
+#Root_EnglishStatistics figure,
+#Root_WelshStatistics figure {
+    margin: 1em 40px;
+}
+#Root_EnglishStatistics hr,
+#Root_WelshStatistics hr {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+}
+#Root_EnglishStatistics pre,
+#Root_WelshStatistics pre {
+    overflow: auto;
+}
+#Root_EnglishStatistics code,
+#Root_WelshStatistics code,
+#Root_EnglishStatistics kbd,
+#Root_WelshStatistics kbd,
+#Root_EnglishStatistics pre,
+#Root_WelshStatistics pre,
+#Root_EnglishStatistics samp,
+#Root_WelshStatistics samp {
+    font-family: monospace, monospace;
+    font-size: 1em;
+}
+#Root_EnglishStatistics button,
+#Root_WelshStatistics button,
+#Root_EnglishStatistics input,
+#Root_WelshStatistics input,
+#Root_EnglishStatistics optgroup,
+#Root_WelshStatistics optgroup,
+#Root_EnglishStatistics select,
+#Root_WelshStatistics select,
+#Root_EnglishStatistics textarea,
+#Root_WelshStatistics textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+}
+#Root_EnglishStatistics button,
+#Root_WelshStatistics button {
+    overflow: visible;
+}
+#Root_EnglishStatistics button,
+#Root_WelshStatistics button,
+#Root_EnglishStatistics select,
+#Root_WelshStatistics select {
+    text-transform: none;
+}
+#Root_EnglishStatistics button,
+#Root_WelshStatistics button,
+#Root_EnglishStatistics html input[type="button"],
+#Root_WelshStatistics html input[type="button"],
+#Root_EnglishStatistics input[type="reset"],
+#Root_WelshStatistics input[type="reset"],
+#Root_EnglishStatistics input[type="submit"],
+#Root_WelshStatistics input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+#Root_EnglishStatistics button[disabled],
+#Root_WelshStatistics button[disabled],
+#Root_EnglishStatistics html input[disabled],
+#Root_WelshStatistics html input[disabled] {
+    cursor: default;
+}
+#Root_EnglishStatistics button::-moz-focus-inner,
+#Root_WelshStatistics button::-moz-focus-inner,
+#Root_EnglishStatistics input::-moz-focus-inner,
+#Root_WelshStatistics input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+#Root_EnglishStatistics input,
+#Root_WelshStatistics input {
+    line-height: normal;
+}
+#Root_EnglishStatistics input[type="checkbox"],
+#Root_WelshStatistics input[type="checkbox"],
+#Root_EnglishStatistics input[type="radio"],
+#Root_WelshStatistics input[type="radio"] {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+}
+#Root_EnglishStatistics input[type="number"]::-webkit-inner-spin-button,
+#Root_WelshStatistics input[type="number"]::-webkit-inner-spin-button,
+#Root_EnglishStatistics input[type="number"]::-webkit-outer-spin-button,
+#Root_WelshStatistics input[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+#Root_EnglishStatistics input[type="search"],
+#Root_WelshStatistics input[type="search"] {
+    -webkit-appearance: textfield;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+}
+#Root_EnglishStatistics input[type="search"]::-webkit-search-cancel-button,
+#Root_WelshStatistics input[type="search"]::-webkit-search-cancel-button,
+#Root_EnglishStatistics input[type="search"]::-webkit-search-decoration,
+#Root_WelshStatistics input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+#Root_EnglishStatistics fieldset,
+#Root_WelshStatistics fieldset {
+    border: 1px solid #c0c0c0;
+    margin: 0 2px;
+    padding: 0.35em 0.625em 0.75em;
+}
+#Root_EnglishStatistics legend,
+#Root_WelshStatistics legend {
+    border: 0;
+    padding: 0;
+}
+#Root_EnglishStatistics textarea,
+#Root_WelshStatistics textarea {
+    overflow: auto;
+}
+#Root_EnglishStatistics optgroup,
+#Root_WelshStatistics optgroup {
+    font-weight: bold;
+}
+#Root_EnglishStatistics table,
+#Root_WelshStatistics table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+#Root_EnglishStatistics td,
+#Root_WelshStatistics td,
+#Root_EnglishStatistics th,
+#Root_WelshStatistics th {
+    padding: 0;
+}
+#Root_EnglishStatistics *,
+#Root_WelshStatistics * {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#Root_EnglishStatistics *:before,
+#Root_WelshStatistics *:before,
+#Root_EnglishStatistics *:after,
+#Root_WelshStatistics *:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#Root_EnglishStatistics html,
+#Root_WelshStatistics html {
+    font-size: 10px;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+#Root_EnglishStatistics body,
+#Root_WelshStatistics body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333333;
+    background-color: #ffffff;
+}
+#Root_EnglishStatistics input,
+#Root_WelshStatistics input,
+#Root_EnglishStatistics button,
+#Root_WelshStatistics button,
+#Root_EnglishStatistics select,
+#Root_WelshStatistics select,
+#Root_EnglishStatistics textarea,
+#Root_WelshStatistics textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+#Root_EnglishStatistics a,
+#Root_WelshStatistics a {
+    color: #337ab7;
+    text-decoration: none;
+}
+#Root_EnglishStatistics a:hover,
+#Root_WelshStatistics a:hover,
+#Root_EnglishStatistics a:focus,
+#Root_WelshStatistics a:focus {
+    color: #23527c;
+    text-decoration: underline;
+}
+#Root_EnglishStatistics a:focus,
+#Root_WelshStatistics a:focus {
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+}
+#Root_EnglishStatistics figure,
+#Root_WelshStatistics figure {
+    margin: 0;
+}
+#Root_EnglishStatistics img,
+#Root_WelshStatistics img {
+    vertical-align: middle;
+}
+#Root_EnglishStatistics .img-responsive,
+#Root_WelshStatistics .img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+#Root_EnglishStatistics .img-rounded,
+#Root_WelshStatistics .img-rounded {
+    border-radius: 6px;
+}
+#Root_EnglishStatistics .img-thumbnail,
+#Root_WelshStatistics .img-thumbnail {
+    padding: 4px;
+    line-height: 1.42857143;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 4px;
+    -webkit-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+}
+#Root_EnglishStatistics .img-circle,
+#Root_WelshStatistics .img-circle {
+    border-radius: 50%;
+}
+#Root_EnglishStatistics hr,
+#Root_WelshStatistics hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #eeeeee;
+}
+#Root_EnglishStatistics .sr-only,
+#Root_WelshStatistics .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+#Root_EnglishStatistics .sr-only-focusable:active,
+#Root_WelshStatistics .sr-only-focusable:active,
+#Root_EnglishStatistics .sr-only-focusable:focus,
+#Root_WelshStatistics .sr-only-focusable:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    clip: auto;
+}
+#Root_EnglishStatistics [role="button"],
+#Root_WelshStatistics [role="button"] {
+    cursor: pointer;
+}
+#Root_EnglishStatistics .container,
+#Root_WelshStatistics .container {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+@media (min-width: 768px) {
+    #Root_EnglishStatistics .container,
+    #Root_WelshStatistics .container {
+        width: 750px;
+    }
+}
+@media (min-width: 992px) {
+    #Root_EnglishStatistics .container,
+    #Root_WelshStatistics .container {
+        width: 970px;
+    }
+}
+@media (min-width: 1200px) {
+    #Root_EnglishStatistics .container,
+    #Root_WelshStatistics .container {
+        width: 1170px;
+    }
+}
+#Root_EnglishStatistics .container-fluid,
+#Root_WelshStatistics .container-fluid {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+#Root_EnglishStatistics .row,
+#Root_WelshStatistics .row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+#Root_EnglishStatistics .col-xs-1,
+#Root_WelshStatistics .col-xs-1,
+#Root_EnglishStatistics .col-sm-1,
+#Root_WelshStatistics .col-sm-1,
+#Root_EnglishStatistics .col-md-1,
+#Root_WelshStatistics .col-md-1,
+#Root_EnglishStatistics .col-lg-1,
+#Root_WelshStatistics .col-lg-1,
+#Root_EnglishStatistics .col-xs-2,
+#Root_WelshStatistics .col-xs-2,
+#Root_EnglishStatistics .col-sm-2,
+#Root_WelshStatistics .col-sm-2,
+#Root_EnglishStatistics .col-md-2,
+#Root_WelshStatistics .col-md-2,
+#Root_EnglishStatistics .col-lg-2,
+#Root_WelshStatistics .col-lg-2,
+#Root_EnglishStatistics .col-xs-3,
+#Root_WelshStatistics .col-xs-3,
+#Root_EnglishStatistics .col-sm-3,
+#Root_WelshStatistics .col-sm-3,
+#Root_EnglishStatistics .col-md-3,
+#Root_WelshStatistics .col-md-3,
+#Root_EnglishStatistics .col-lg-3,
+#Root_WelshStatistics .col-lg-3,
+#Root_EnglishStatistics .col-xs-4,
+#Root_WelshStatistics .col-xs-4,
+#Root_EnglishStatistics .col-sm-4,
+#Root_WelshStatistics .col-sm-4,
+#Root_EnglishStatistics .col-md-4,
+#Root_WelshStatistics .col-md-4,
+#Root_EnglishStatistics .col-lg-4,
+#Root_WelshStatistics .col-lg-4,
+#Root_EnglishStatistics .col-xs-5,
+#Root_WelshStatistics .col-xs-5,
+#Root_EnglishStatistics .col-sm-5,
+#Root_WelshStatistics .col-sm-5,
+#Root_EnglishStatistics .col-md-5,
+#Root_WelshStatistics .col-md-5,
+#Root_EnglishStatistics .col-lg-5,
+#Root_WelshStatistics .col-lg-5,
+#Root_EnglishStatistics .col-xs-6,
+#Root_WelshStatistics .col-xs-6,
+#Root_EnglishStatistics .col-sm-6,
+#Root_WelshStatistics .col-sm-6,
+#Root_EnglishStatistics .col-md-6,
+#Root_WelshStatistics .col-md-6,
+#Root_EnglishStatistics .col-lg-6,
+#Root_WelshStatistics .col-lg-6,
+#Root_EnglishStatistics .col-xs-7,
+#Root_WelshStatistics .col-xs-7,
+#Root_EnglishStatistics .col-sm-7,
+#Root_WelshStatistics .col-sm-7,
+#Root_EnglishStatistics .col-md-7,
+#Root_WelshStatistics .col-md-7,
+#Root_EnglishStatistics .col-lg-7,
+#Root_WelshStatistics .col-lg-7,
+#Root_EnglishStatistics .col-xs-8,
+#Root_WelshStatistics .col-xs-8,
+#Root_EnglishStatistics .col-sm-8,
+#Root_WelshStatistics .col-sm-8,
+#Root_EnglishStatistics .col-md-8,
+#Root_WelshStatistics .col-md-8,
+#Root_EnglishStatistics .col-lg-8,
+#Root_WelshStatistics .col-lg-8,
+#Root_EnglishStatistics .col-xs-9,
+#Root_WelshStatistics .col-xs-9,
+#Root_EnglishStatistics .col-sm-9,
+#Root_WelshStatistics .col-sm-9,
+#Root_EnglishStatistics .col-md-9,
+#Root_WelshStatistics .col-md-9,
+#Root_EnglishStatistics .col-lg-9,
+#Root_WelshStatistics .col-lg-9,
+#Root_EnglishStatistics .col-xs-10,
+#Root_WelshStatistics .col-xs-10,
+#Root_EnglishStatistics .col-sm-10,
+#Root_WelshStatistics .col-sm-10,
+#Root_EnglishStatistics .col-md-10,
+#Root_WelshStatistics .col-md-10,
+#Root_EnglishStatistics .col-lg-10,
+#Root_WelshStatistics .col-lg-10,
+#Root_EnglishStatistics .col-xs-11,
+#Root_WelshStatistics .col-xs-11,
+#Root_EnglishStatistics .col-sm-11,
+#Root_WelshStatistics .col-sm-11,
+#Root_EnglishStatistics .col-md-11,
+#Root_WelshStatistics .col-md-11,
+#Root_EnglishStatistics .col-lg-11,
+#Root_WelshStatistics .col-lg-11,
+#Root_EnglishStatistics .col-xs-12,
+#Root_WelshStatistics .col-xs-12,
+#Root_EnglishStatistics .col-sm-12,
+#Root_WelshStatistics .col-sm-12,
+#Root_EnglishStatistics .col-md-12,
+#Root_WelshStatistics .col-md-12,
+#Root_EnglishStatistics .col-lg-12,
+#Root_WelshStatistics .col-lg-12 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+#Root_EnglishStatistics .col-xs-1,
+#Root_WelshStatistics .col-xs-1,
+#Root_EnglishStatistics .col-xs-2,
+#Root_WelshStatistics .col-xs-2,
+#Root_EnglishStatistics .col-xs-3,
+#Root_WelshStatistics .col-xs-3,
+#Root_EnglishStatistics .col-xs-4,
+#Root_WelshStatistics .col-xs-4,
+#Root_EnglishStatistics .col-xs-5,
+#Root_WelshStatistics .col-xs-5,
+#Root_EnglishStatistics .col-xs-6,
+#Root_WelshStatistics .col-xs-6,
+#Root_EnglishStatistics .col-xs-7,
+#Root_WelshStatistics .col-xs-7,
+#Root_EnglishStatistics .col-xs-8,
+#Root_WelshStatistics .col-xs-8,
+#Root_EnglishStatistics .col-xs-9,
+#Root_WelshStatistics .col-xs-9,
+#Root_EnglishStatistics .col-xs-10,
+#Root_WelshStatistics .col-xs-10,
+#Root_EnglishStatistics .col-xs-11,
+#Root_WelshStatistics .col-xs-11,
+#Root_EnglishStatistics .col-xs-12,
+#Root_WelshStatistics .col-xs-12 {
+    float: left;
+}
+#Root_EnglishStatistics .col-xs-12,
+#Root_WelshStatistics .col-xs-12 {
+    width: 100%;
+}
+#Root_EnglishStatistics .col-xs-11,
+#Root_WelshStatistics .col-xs-11 {
+    width: 91.66666667%;
+}
+#Root_EnglishStatistics .col-xs-10,
+#Root_WelshStatistics .col-xs-10 {
+    width: 83.33333333%;
+}
+#Root_EnglishStatistics .col-xs-9,
+#Root_WelshStatistics .col-xs-9 {
+    width: 75%;
+}
+#Root_EnglishStatistics .col-xs-8,
+#Root_WelshStatistics .col-xs-8 {
+    width: 66.66666667%;
+}
+#Root_EnglishStatistics .col-xs-7,
+#Root_WelshStatistics .col-xs-7 {
+    width: 58.33333333%;
+}
+#Root_EnglishStatistics .col-xs-6,
+#Root_WelshStatistics .col-xs-6 {
+    width: 50%;
+}
+#Root_EnglishStatistics .col-xs-5,
+#Root_WelshStatistics .col-xs-5 {
+    width: 41.66666667%;
+}
+#Root_EnglishStatistics .col-xs-4,
+#Root_WelshStatistics .col-xs-4 {
+    width: 33.33333333%;
+}
+#Root_EnglishStatistics .col-xs-3,
+#Root_WelshStatistics .col-xs-3 {
+    width: 25%;
+}
+#Root_EnglishStatistics .col-xs-2,
+#Root_WelshStatistics .col-xs-2 {
+    width: 16.66666667%;
+}
+#Root_EnglishStatistics .col-xs-1,
+#Root_WelshStatistics .col-xs-1 {
+    width: 8.33333333%;
+}
+#Root_EnglishStatistics .col-xs-pull-12,
+#Root_WelshStatistics .col-xs-pull-12 {
+    right: 100%;
+}
+#Root_EnglishStatistics .col-xs-pull-11,
+#Root_WelshStatistics .col-xs-pull-11 {
+    right: 91.66666667%;
+}
+#Root_EnglishStatistics .col-xs-pull-10,
+#Root_WelshStatistics .col-xs-pull-10 {
+    right: 83.33333333%;
+}
+#Root_EnglishStatistics .col-xs-pull-9,
+#Root_WelshStatistics .col-xs-pull-9 {
+    right: 75%;
+}
+#Root_EnglishStatistics .col-xs-pull-8,
+#Root_WelshStatistics .col-xs-pull-8 {
+    right: 66.66666667%;
+}
+#Root_EnglishStatistics .col-xs-pull-7,
+#Root_WelshStatistics .col-xs-pull-7 {
+    right: 58.33333333%;
+}
+#Root_EnglishStatistics .col-xs-pull-6,
+#Root_WelshStatistics .col-xs-pull-6 {
+    right: 50%;
+}
+#Root_EnglishStatistics .col-xs-pull-5,
+#Root_WelshStatistics .col-xs-pull-5 {
+    right: 41.66666667%;
+}
+#Root_EnglishStatistics .col-xs-pull-4,
+#Root_WelshStatistics .col-xs-pull-4 {
+    right: 33.33333333%;
+}
+#Root_EnglishStatistics .col-xs-pull-3,
+#Root_WelshStatistics .col-xs-pull-3 {
+    right: 25%;
+}
+#Root_EnglishStatistics .col-xs-pull-2,
+#Root_WelshStatistics .col-xs-pull-2 {
+    right: 16.66666667%;
+}
+#Root_EnglishStatistics .col-xs-pull-1,
+#Root_WelshStatistics .col-xs-pull-1 {
+    right: 8.33333333%;
+}
+#Root_EnglishStatistics .col-xs-pull-0,
+#Root_WelshStatistics .col-xs-pull-0 {
+    right: auto;
+}
+#Root_EnglishStatistics .col-xs-push-12,
+#Root_WelshStatistics .col-xs-push-12 {
+    left: 100%;
+}
+#Root_EnglishStatistics .col-xs-push-11,
+#Root_WelshStatistics .col-xs-push-11 {
+    left: 91.66666667%;
+}
+#Root_EnglishStatistics .col-xs-push-10,
+#Root_WelshStatistics .col-xs-push-10 {
+    left: 83.33333333%;
+}
+#Root_EnglishStatistics .col-xs-push-9,
+#Root_WelshStatistics .col-xs-push-9 {
+    left: 75%;
+}
+#Root_EnglishStatistics .col-xs-push-8,
+#Root_WelshStatistics .col-xs-push-8 {
+    left: 66.66666667%;
+}
+#Root_EnglishStatistics .col-xs-push-7,
+#Root_WelshStatistics .col-xs-push-7 {
+    left: 58.33333333%;
+}
+#Root_EnglishStatistics .col-xs-push-6,
+#Root_WelshStatistics .col-xs-push-6 {
+    left: 50%;
+}
+#Root_EnglishStatistics .col-xs-push-5,
+#Root_WelshStatistics .col-xs-push-5 {
+    left: 41.66666667%;
+}
+#Root_EnglishStatistics .col-xs-push-4,
+#Root_WelshStatistics .col-xs-push-4 {
+    left: 33.33333333%;
+}
+#Root_EnglishStatistics .col-xs-push-3,
+#Root_WelshStatistics .col-xs-push-3 {
+    left: 25%;
+}
+#Root_EnglishStatistics .col-xs-push-2,
+#Root_WelshStatistics .col-xs-push-2 {
+    left: 16.66666667%;
+}
+#Root_EnglishStatistics .col-xs-push-1,
+#Root_WelshStatistics .col-xs-push-1 {
+    left: 8.33333333%;
+}
+#Root_EnglishStatistics .col-xs-push-0,
+#Root_WelshStatistics .col-xs-push-0 {
+    left: auto;
+}
+#Root_EnglishStatistics .col-xs-offset-12,
+#Root_WelshStatistics .col-xs-offset-12 {
+    margin-left: 100%;
+}
+#Root_EnglishStatistics .col-xs-offset-11,
+#Root_WelshStatistics .col-xs-offset-11 {
+    margin-left: 91.66666667%;
+}
+#Root_EnglishStatistics .col-xs-offset-10,
+#Root_WelshStatistics .col-xs-offset-10 {
+    margin-left: 83.33333333%;
+}
+#Root_EnglishStatistics .col-xs-offset-9,
+#Root_WelshStatistics .col-xs-offset-9 {
+    margin-left: 75%;
+}
+#Root_EnglishStatistics .col-xs-offset-8,
+#Root_WelshStatistics .col-xs-offset-8 {
+    margin-left: 66.66666667%;
+}
+#Root_EnglishStatistics .col-xs-offset-7,
+#Root_WelshStatistics .col-xs-offset-7 {
+    margin-left: 58.33333333%;
+}
+#Root_EnglishStatistics .col-xs-offset-6,
+#Root_WelshStatistics .col-xs-offset-6 {
+    margin-left: 50%;
+}
+#Root_EnglishStatistics .col-xs-offset-5,
+#Root_WelshStatistics .col-xs-offset-5 {
+    margin-left: 41.66666667%;
+}
+#Root_EnglishStatistics .col-xs-offset-4,
+#Root_WelshStatistics .col-xs-offset-4 {
+    margin-left: 33.33333333%;
+}
+#Root_EnglishStatistics .col-xs-offset-3,
+#Root_WelshStatistics .col-xs-offset-3 {
+    margin-left: 25%;
+}
+#Root_EnglishStatistics .col-xs-offset-2,
+#Root_WelshStatistics .col-xs-offset-2 {
+    margin-left: 16.66666667%;
+}
+#Root_EnglishStatistics .col-xs-offset-1,
+#Root_WelshStatistics .col-xs-offset-1 {
+    margin-left: 8.33333333%;
+}
+#Root_EnglishStatistics .col-xs-offset-0,
+#Root_WelshStatistics .col-xs-offset-0 {
+    margin-left: 0%;
+}
+@media (min-width: 768px) {
+    #Root_EnglishStatistics .col-sm-1,
+    #Root_WelshStatistics .col-sm-1,
+    #Root_EnglishStatistics .col-sm-2,
+    #Root_WelshStatistics .col-sm-2,
+    #Root_EnglishStatistics .col-sm-3,
+    #Root_WelshStatistics .col-sm-3,
+    #Root_EnglishStatistics .col-sm-4,
+    #Root_WelshStatistics .col-sm-4,
+    #Root_EnglishStatistics .col-sm-5,
+    #Root_WelshStatistics .col-sm-5,
+    #Root_EnglishStatistics .col-sm-6,
+    #Root_WelshStatistics .col-sm-6,
+    #Root_EnglishStatistics .col-sm-7,
+    #Root_WelshStatistics .col-sm-7,
+    #Root_EnglishStatistics .col-sm-8,
+    #Root_WelshStatistics .col-sm-8,
+    #Root_EnglishStatistics .col-sm-9,
+    #Root_WelshStatistics .col-sm-9,
+    #Root_EnglishStatistics .col-sm-10,
+    #Root_WelshStatistics .col-sm-10,
+    #Root_EnglishStatistics .col-sm-11,
+    #Root_WelshStatistics .col-sm-11,
+    #Root_EnglishStatistics .col-sm-12,
+    #Root_WelshStatistics .col-sm-12 {
+        float: left;
+    }
+    #Root_EnglishStatistics .col-sm-12,
+    #Root_WelshStatistics .col-sm-12 {
+        width: 100%;
+    }
+    #Root_EnglishStatistics .col-sm-11,
+    #Root_WelshStatistics .col-sm-11 {
+        width: 91.66666667%;
+    }
+    #Root_EnglishStatistics .col-sm-10,
+    #Root_WelshStatistics .col-sm-10 {
+        width: 83.33333333%;
+    }
+    #Root_EnglishStatistics .col-sm-9,
+    #Root_WelshStatistics .col-sm-9 {
+        width: 75%;
+    }
+    #Root_EnglishStatistics .col-sm-8,
+    #Root_WelshStatistics .col-sm-8 {
+        width: 66.66666667%;
+    }
+    #Root_EnglishStatistics .col-sm-7,
+    #Root_WelshStatistics .col-sm-7 {
+        width: 58.33333333%;
+    }
+    #Root_EnglishStatistics .col-sm-6,
+    #Root_WelshStatistics .col-sm-6 {
+        width: 50%;
+    }
+    #Root_EnglishStatistics .col-sm-5,
+    #Root_WelshStatistics .col-sm-5 {
+        width: 41.66666667%;
+    }
+    #Root_EnglishStatistics .col-sm-4,
+    #Root_WelshStatistics .col-sm-4 {
+        width: 33.33333333%;
+    }
+    #Root_EnglishStatistics .col-sm-3,
+    #Root_WelshStatistics .col-sm-3 {
+        width: 25%;
+    }
+    #Root_EnglishStatistics .col-sm-2,
+    #Root_WelshStatistics .col-sm-2 {
+        width: 16.66666667%;
+    }
+    #Root_EnglishStatistics .col-sm-1,
+    #Root_WelshStatistics .col-sm-1 {
+        width: 8.33333333%;
+    }
+    #Root_EnglishStatistics .col-sm-pull-12,
+    #Root_WelshStatistics .col-sm-pull-12 {
+        right: 100%;
+    }
+    #Root_EnglishStatistics .col-sm-pull-11,
+    #Root_WelshStatistics .col-sm-pull-11 {
+        right: 91.66666667%;
+    }
+    #Root_EnglishStatistics .col-sm-pull-10,
+    #Root_WelshStatistics .col-sm-pull-10 {
+        right: 83.33333333%;
+    }
+    #Root_EnglishStatistics .col-sm-pull-9,
+    #Root_WelshStatistics .col-sm-pull-9 {
+        right: 75%;
+    }
+    #Root_EnglishStatistics .col-sm-pull-8,
+    #Root_WelshStatistics .col-sm-pull-8 {
+        right: 66.66666667%;
+    }
+    #Root_EnglishStatistics .col-sm-pull-7,
+    #Root_WelshStatistics .col-sm-pull-7 {
+        right: 58.33333333%;
+    }
+    #Root_EnglishStatistics .col-sm-pull-6,
+    #Root_WelshStatistics .col-sm-pull-6 {
+        right: 50%;
+    }
+    #Root_EnglishStatistics .col-sm-pull-5,
+    #Root_WelshStatistics .col-sm-pull-5 {
+        right: 41.66666667%;
+    }
+    #Root_EnglishStatistics .col-sm-pull-4,
+    #Root_WelshStatistics .col-sm-pull-4 {
+        right: 33.33333333%;
+    }
+    #Root_EnglishStatistics .col-sm-pull-3,
+    #Root_WelshStatistics .col-sm-pull-3 {
+        right: 25%;
+    }
+    #Root_EnglishStatistics .col-sm-pull-2,
+    #Root_WelshStatistics .col-sm-pull-2 {
+        right: 16.66666667%;
+    }
+    #Root_EnglishStatistics .col-sm-pull-1,
+    #Root_WelshStatistics .col-sm-pull-1 {
+        right: 8.33333333%;
+    }
+    #Root_EnglishStatistics .col-sm-pull-0,
+    #Root_WelshStatistics .col-sm-pull-0 {
+        right: auto;
+    }
+    #Root_EnglishStatistics .col-sm-push-12,
+    #Root_WelshStatistics .col-sm-push-12 {
+        left: 100%;
+    }
+    #Root_EnglishStatistics .col-sm-push-11,
+    #Root_WelshStatistics .col-sm-push-11 {
+        left: 91.66666667%;
+    }
+    #Root_EnglishStatistics .col-sm-push-10,
+    #Root_WelshStatistics .col-sm-push-10 {
+        left: 83.33333333%;
+    }
+    #Root_EnglishStatistics .col-sm-push-9,
+    #Root_WelshStatistics .col-sm-push-9 {
+        left: 75%;
+    }
+    #Root_EnglishStatistics .col-sm-push-8,
+    #Root_WelshStatistics .col-sm-push-8 {
+        left: 66.66666667%;
+    }
+    #Root_EnglishStatistics .col-sm-push-7,
+    #Root_WelshStatistics .col-sm-push-7 {
+        left: 58.33333333%;
+    }
+    #Root_EnglishStatistics .col-sm-push-6,
+    #Root_WelshStatistics .col-sm-push-6 {
+        left: 50%;
+    }
+    #Root_EnglishStatistics .col-sm-push-5,
+    #Root_WelshStatistics .col-sm-push-5 {
+        left: 41.66666667%;
+    }
+    #Root_EnglishStatistics .col-sm-push-4,
+    #Root_WelshStatistics .col-sm-push-4 {
+        left: 33.33333333%;
+    }
+    #Root_EnglishStatistics .col-sm-push-3,
+    #Root_WelshStatistics .col-sm-push-3 {
+        left: 25%;
+    }
+    #Root_EnglishStatistics .col-sm-push-2,
+    #Root_WelshStatistics .col-sm-push-2 {
+        left: 16.66666667%;
+    }
+    #Root_EnglishStatistics .col-sm-push-1,
+    #Root_WelshStatistics .col-sm-push-1 {
+        left: 8.33333333%;
+    }
+    #Root_EnglishStatistics .col-sm-push-0,
+    #Root_WelshStatistics .col-sm-push-0 {
+        left: auto;
+    }
+    #Root_EnglishStatistics .col-sm-offset-12,
+    #Root_WelshStatistics .col-sm-offset-12 {
+        margin-left: 100%;
+    }
+    #Root_EnglishStatistics .col-sm-offset-11,
+    #Root_WelshStatistics .col-sm-offset-11 {
+        margin-left: 91.66666667%;
+    }
+    #Root_EnglishStatistics .col-sm-offset-10,
+    #Root_WelshStatistics .col-sm-offset-10 {
+        margin-left: 83.33333333%;
+    }
+    #Root_EnglishStatistics .col-sm-offset-9,
+    #Root_WelshStatistics .col-sm-offset-9 {
+        margin-left: 75%;
+    }
+    #Root_EnglishStatistics .col-sm-offset-8,
+    #Root_WelshStatistics .col-sm-offset-8 {
+        margin-left: 66.66666667%;
+    }
+    #Root_EnglishStatistics .col-sm-offset-7,
+    #Root_WelshStatistics .col-sm-offset-7 {
+        margin-left: 58.33333333%;
+    }
+    #Root_EnglishStatistics .col-sm-offset-6,
+    #Root_WelshStatistics .col-sm-offset-6 {
+        margin-left: 50%;
+    }
+    #Root_EnglishStatistics .col-sm-offset-5,
+    #Root_WelshStatistics .col-sm-offset-5 {
+        margin-left: 41.66666667%;
+    }
+    #Root_EnglishStatistics .col-sm-offset-4,
+    #Root_WelshStatistics .col-sm-offset-4 {
+        margin-left: 33.33333333%;
+    }
+    #Root_EnglishStatistics .col-sm-offset-3,
+    #Root_WelshStatistics .col-sm-offset-3 {
+        margin-left: 25%;
+    }
+    #Root_EnglishStatistics .col-sm-offset-2,
+    #Root_WelshStatistics .col-sm-offset-2 {
+        margin-left: 16.66666667%;
+    }
+    #Root_EnglishStatistics .col-sm-offset-1,
+    #Root_WelshStatistics .col-sm-offset-1 {
+        margin-left: 8.33333333%;
+    }
+    #Root_EnglishStatistics .col-sm-offset-0,
+    #Root_WelshStatistics .col-sm-offset-0 {
+        margin-left: 0%;
+    }
+}
+@media (min-width: 992px) {
+    #Root_EnglishStatistics .col-md-1,
+    #Root_WelshStatistics .col-md-1,
+    #Root_EnglishStatistics .col-md-2,
+    #Root_WelshStatistics .col-md-2,
+    #Root_EnglishStatistics .col-md-3,
+    #Root_WelshStatistics .col-md-3,
+    #Root_EnglishStatistics .col-md-4,
+    #Root_WelshStatistics .col-md-4,
+    #Root_EnglishStatistics .col-md-5,
+    #Root_WelshStatistics .col-md-5,
+    #Root_EnglishStatistics .col-md-6,
+    #Root_WelshStatistics .col-md-6,
+    #Root_EnglishStatistics .col-md-7,
+    #Root_WelshStatistics .col-md-7,
+    #Root_EnglishStatistics .col-md-8,
+    #Root_WelshStatistics .col-md-8,
+    #Root_EnglishStatistics .col-md-9,
+    #Root_WelshStatistics .col-md-9,
+    #Root_EnglishStatistics .col-md-10,
+    #Root_WelshStatistics .col-md-10,
+    #Root_EnglishStatistics .col-md-11,
+    #Root_WelshStatistics .col-md-11,
+    #Root_EnglishStatistics .col-md-12,
+    #Root_WelshStatistics .col-md-12 {
+        float: left;
+    }
+    #Root_EnglishStatistics .col-md-12,
+    #Root_WelshStatistics .col-md-12 {
+        width: 100%;
+    }
+    #Root_EnglishStatistics .col-md-11,
+    #Root_WelshStatistics .col-md-11 {
+        width: 91.66666667%;
+    }
+    #Root_EnglishStatistics .col-md-10,
+    #Root_WelshStatistics .col-md-10 {
+        width: 83.33333333%;
+    }
+    #Root_EnglishStatistics .col-md-9,
+    #Root_WelshStatistics .col-md-9 {
+        width: 75%;
+    }
+    #Root_EnglishStatistics .col-md-8,
+    #Root_WelshStatistics .col-md-8 {
+        width: 66.66666667%;
+    }
+    #Root_EnglishStatistics .col-md-7,
+    #Root_WelshStatistics .col-md-7 {
+        width: 58.33333333%;
+    }
+    #Root_EnglishStatistics .col-md-6,
+    #Root_WelshStatistics .col-md-6 {
+        width: 50%;
+    }
+    #Root_EnglishStatistics .col-md-5,
+    #Root_WelshStatistics .col-md-5 {
+        width: 41.66666667%;
+    }
+    #Root_EnglishStatistics .col-md-4,
+    #Root_WelshStatistics .col-md-4 {
+        width: 33.33333333%;
+    }
+    #Root_EnglishStatistics .col-md-3,
+    #Root_WelshStatistics .col-md-3 {
+        width: 25%;
+    }
+    #Root_EnglishStatistics .col-md-2,
+    #Root_WelshStatistics .col-md-2 {
+        width: 16.66666667%;
+    }
+    #Root_EnglishStatistics .col-md-1,
+    #Root_WelshStatistics .col-md-1 {
+        width: 8.33333333%;
+    }
+    #Root_EnglishStatistics .col-md-pull-12,
+    #Root_WelshStatistics .col-md-pull-12 {
+        right: 100%;
+    }
+    #Root_EnglishStatistics .col-md-pull-11,
+    #Root_WelshStatistics .col-md-pull-11 {
+        right: 91.66666667%;
+    }
+    #Root_EnglishStatistics .col-md-pull-10,
+    #Root_WelshStatistics .col-md-pull-10 {
+        right: 83.33333333%;
+    }
+    #Root_EnglishStatistics .col-md-pull-9,
+    #Root_WelshStatistics .col-md-pull-9 {
+        right: 75%;
+    }
+    #Root_EnglishStatistics .col-md-pull-8,
+    #Root_WelshStatistics .col-md-pull-8 {
+        right: 66.66666667%;
+    }
+    #Root_EnglishStatistics .col-md-pull-7,
+    #Root_WelshStatistics .col-md-pull-7 {
+        right: 58.33333333%;
+    }
+    #Root_EnglishStatistics .col-md-pull-6,
+    #Root_WelshStatistics .col-md-pull-6 {
+        right: 50%;
+    }
+    #Root_EnglishStatistics .col-md-pull-5,
+    #Root_WelshStatistics .col-md-pull-5 {
+        right: 41.66666667%;
+    }
+    #Root_EnglishStatistics .col-md-pull-4,
+    #Root_WelshStatistics .col-md-pull-4 {
+        right: 33.33333333%;
+    }
+    #Root_EnglishStatistics .col-md-pull-3,
+    #Root_WelshStatistics .col-md-pull-3 {
+        right: 25%;
+    }
+    #Root_EnglishStatistics .col-md-pull-2,
+    #Root_WelshStatistics .col-md-pull-2 {
+        right: 16.66666667%;
+    }
+    #Root_EnglishStatistics .col-md-pull-1,
+    #Root_WelshStatistics .col-md-pull-1 {
+        right: 8.33333333%;
+    }
+    #Root_EnglishStatistics .col-md-pull-0,
+    #Root_WelshStatistics .col-md-pull-0 {
+        right: auto;
+    }
+    #Root_EnglishStatistics .col-md-push-12,
+    #Root_WelshStatistics .col-md-push-12 {
+        left: 100%;
+    }
+    #Root_EnglishStatistics .col-md-push-11,
+    #Root_WelshStatistics .col-md-push-11 {
+        left: 91.66666667%;
+    }
+    #Root_EnglishStatistics .col-md-push-10,
+    #Root_WelshStatistics .col-md-push-10 {
+        left: 83.33333333%;
+    }
+    #Root_EnglishStatistics .col-md-push-9,
+    #Root_WelshStatistics .col-md-push-9 {
+        left: 75%;
+    }
+    #Root_EnglishStatistics .col-md-push-8,
+    #Root_WelshStatistics .col-md-push-8 {
+        left: 66.66666667%;
+    }
+    #Root_EnglishStatistics .col-md-push-7,
+    #Root_WelshStatistics .col-md-push-7 {
+        left: 58.33333333%;
+    }
+    #Root_EnglishStatistics .col-md-push-6,
+    #Root_WelshStatistics .col-md-push-6 {
+        left: 50%;
+    }
+    #Root_EnglishStatistics .col-md-push-5,
+    #Root_WelshStatistics .col-md-push-5 {
+        left: 41.66666667%;
+    }
+    #Root_EnglishStatistics .col-md-push-4,
+    #Root_WelshStatistics .col-md-push-4 {
+        left: 33.33333333%;
+    }
+    #Root_EnglishStatistics .col-md-push-3,
+    #Root_WelshStatistics .col-md-push-3 {
+        left: 25%;
+    }
+    #Root_EnglishStatistics .col-md-push-2,
+    #Root_WelshStatistics .col-md-push-2 {
+        left: 16.66666667%;
+    }
+    #Root_EnglishStatistics .col-md-push-1,
+    #Root_WelshStatistics .col-md-push-1 {
+        left: 8.33333333%;
+    }
+    #Root_EnglishStatistics .col-md-push-0,
+    #Root_WelshStatistics .col-md-push-0 {
+        left: auto;
+    }
+    #Root_EnglishStatistics .col-md-offset-12,
+    #Root_WelshStatistics .col-md-offset-12 {
+        margin-left: 100%;
+    }
+    #Root_EnglishStatistics .col-md-offset-11,
+    #Root_WelshStatistics .col-md-offset-11 {
+        margin-left: 91.66666667%;
+    }
+    #Root_EnglishStatistics .col-md-offset-10,
+    #Root_WelshStatistics .col-md-offset-10 {
+        margin-left: 83.33333333%;
+    }
+    #Root_EnglishStatistics .col-md-offset-9,
+    #Root_WelshStatistics .col-md-offset-9 {
+        margin-left: 75%;
+    }
+    #Root_EnglishStatistics .col-md-offset-8,
+    #Root_WelshStatistics .col-md-offset-8 {
+        margin-left: 66.66666667%;
+    }
+    #Root_EnglishStatistics .col-md-offset-7,
+    #Root_WelshStatistics .col-md-offset-7 {
+        margin-left: 58.33333333%;
+    }
+    #Root_EnglishStatistics .col-md-offset-6,
+    #Root_WelshStatistics .col-md-offset-6 {
+        margin-left: 50%;
+    }
+    #Root_EnglishStatistics .col-md-offset-5,
+    #Root_WelshStatistics .col-md-offset-5 {
+        margin-left: 41.66666667%;
+    }
+    #Root_EnglishStatistics .col-md-offset-4,
+    #Root_WelshStatistics .col-md-offset-4 {
+        margin-left: 33.33333333%;
+    }
+    #Root_EnglishStatistics .col-md-offset-3,
+    #Root_WelshStatistics .col-md-offset-3 {
+        margin-left: 25%;
+    }
+    #Root_EnglishStatistics .col-md-offset-2,
+    #Root_WelshStatistics .col-md-offset-2 {
+        margin-left: 16.66666667%;
+    }
+    #Root_EnglishStatistics .col-md-offset-1,
+    #Root_WelshStatistics .col-md-offset-1 {
+        margin-left: 8.33333333%;
+    }
+    #Root_EnglishStatistics .col-md-offset-0,
+    #Root_WelshStatistics .col-md-offset-0 {
+        margin-left: 0%;
+    }
+}
+@media (min-width: 1200px) {
+    #Root_EnglishStatistics .col-lg-1,
+    #Root_WelshStatistics .col-lg-1,
+    #Root_EnglishStatistics .col-lg-2,
+    #Root_WelshStatistics .col-lg-2,
+    #Root_EnglishStatistics .col-lg-3,
+    #Root_WelshStatistics .col-lg-3,
+    #Root_EnglishStatistics .col-lg-4,
+    #Root_WelshStatistics .col-lg-4,
+    #Root_EnglishStatistics .col-lg-5,
+    #Root_WelshStatistics .col-lg-5,
+    #Root_EnglishStatistics .col-lg-6,
+    #Root_WelshStatistics .col-lg-6,
+    #Root_EnglishStatistics .col-lg-7,
+    #Root_WelshStatistics .col-lg-7,
+    #Root_EnglishStatistics .col-lg-8,
+    #Root_WelshStatistics .col-lg-8,
+    #Root_EnglishStatistics .col-lg-9,
+    #Root_WelshStatistics .col-lg-9,
+    #Root_EnglishStatistics .col-lg-10,
+    #Root_WelshStatistics .col-lg-10,
+    #Root_EnglishStatistics .col-lg-11,
+    #Root_WelshStatistics .col-lg-11,
+    #Root_EnglishStatistics .col-lg-12,
+    #Root_WelshStatistics .col-lg-12 {
+        float: left;
+    }
+    #Root_EnglishStatistics .col-lg-12,
+    #Root_WelshStatistics .col-lg-12 {
+        width: 100%;
+    }
+    #Root_EnglishStatistics .col-lg-11,
+    #Root_WelshStatistics .col-lg-11 {
+        width: 91.66666667%;
+    }
+    #Root_EnglishStatistics .col-lg-10,
+    #Root_WelshStatistics .col-lg-10 {
+        width: 83.33333333%;
+    }
+    #Root_EnglishStatistics .col-lg-9,
+    #Root_WelshStatistics .col-lg-9 {
+        width: 75%;
+    }
+    #Root_EnglishStatistics .col-lg-8,
+    #Root_WelshStatistics .col-lg-8 {
+        width: 66.66666667%;
+    }
+    #Root_EnglishStatistics .col-lg-7,
+    #Root_WelshStatistics .col-lg-7 {
+        width: 58.33333333%;
+    }
+    #Root_EnglishStatistics .col-lg-6,
+    #Root_WelshStatistics .col-lg-6 {
+        width: 50%;
+    }
+    #Root_EnglishStatistics .col-lg-5,
+    #Root_WelshStatistics .col-lg-5 {
+        width: 41.66666667%;
+    }
+    #Root_EnglishStatistics .col-lg-4,
+    #Root_WelshStatistics .col-lg-4 {
+        width: 33.33333333%;
+    }
+    #Root_EnglishStatistics .col-lg-3,
+    #Root_WelshStatistics .col-lg-3 {
+        width: 25%;
+    }
+    #Root_EnglishStatistics .col-lg-2,
+    #Root_WelshStatistics .col-lg-2 {
+        width: 16.66666667%;
+    }
+    #Root_EnglishStatistics .col-lg-1,
+    #Root_WelshStatistics .col-lg-1 {
+        width: 8.33333333%;
+    }
+    #Root_EnglishStatistics .col-lg-pull-12,
+    #Root_WelshStatistics .col-lg-pull-12 {
+        right: 100%;
+    }
+    #Root_EnglishStatistics .col-lg-pull-11,
+    #Root_WelshStatistics .col-lg-pull-11 {
+        right: 91.66666667%;
+    }
+    #Root_EnglishStatistics .col-lg-pull-10,
+    #Root_WelshStatistics .col-lg-pull-10 {
+        right: 83.33333333%;
+    }
+    #Root_EnglishStatistics .col-lg-pull-9,
+    #Root_WelshStatistics .col-lg-pull-9 {
+        right: 75%;
+    }
+    #Root_EnglishStatistics .col-lg-pull-8,
+    #Root_WelshStatistics .col-lg-pull-8 {
+        right: 66.66666667%;
+    }
+    #Root_EnglishStatistics .col-lg-pull-7,
+    #Root_WelshStatistics .col-lg-pull-7 {
+        right: 58.33333333%;
+    }
+    #Root_EnglishStatistics .col-lg-pull-6,
+    #Root_WelshStatistics .col-lg-pull-6 {
+        right: 50%;
+    }
+    #Root_EnglishStatistics .col-lg-pull-5,
+    #Root_WelshStatistics .col-lg-pull-5 {
+        right: 41.66666667%;
+    }
+    #Root_EnglishStatistics .col-lg-pull-4,
+    #Root_WelshStatistics .col-lg-pull-4 {
+        right: 33.33333333%;
+    }
+    #Root_EnglishStatistics .col-lg-pull-3,
+    #Root_WelshStatistics .col-lg-pull-3 {
+        right: 25%;
+    }
+    #Root_EnglishStatistics .col-lg-pull-2,
+    #Root_WelshStatistics .col-lg-pull-2 {
+        right: 16.66666667%;
+    }
+    #Root_EnglishStatistics .col-lg-pull-1,
+    #Root_WelshStatistics .col-lg-pull-1 {
+        right: 8.33333333%;
+    }
+    #Root_EnglishStatistics .col-lg-pull-0,
+    #Root_WelshStatistics .col-lg-pull-0 {
+        right: auto;
+    }
+    #Root_EnglishStatistics .col-lg-push-12,
+    #Root_WelshStatistics .col-lg-push-12 {
+        left: 100%;
+    }
+    #Root_EnglishStatistics .col-lg-push-11,
+    #Root_WelshStatistics .col-lg-push-11 {
+        left: 91.66666667%;
+    }
+    #Root_EnglishStatistics .col-lg-push-10,
+    #Root_WelshStatistics .col-lg-push-10 {
+        left: 83.33333333%;
+    }
+    #Root_EnglishStatistics .col-lg-push-9,
+    #Root_WelshStatistics .col-lg-push-9 {
+        left: 75%;
+    }
+    #Root_EnglishStatistics .col-lg-push-8,
+    #Root_WelshStatistics .col-lg-push-8 {
+        left: 66.66666667%;
+    }
+    #Root_EnglishStatistics .col-lg-push-7,
+    #Root_WelshStatistics .col-lg-push-7 {
+        left: 58.33333333%;
+    }
+    #Root_EnglishStatistics .col-lg-push-6,
+    #Root_WelshStatistics .col-lg-push-6 {
+        left: 50%;
+    }
+    #Root_EnglishStatistics .col-lg-push-5,
+    #Root_WelshStatistics .col-lg-push-5 {
+        left: 41.66666667%;
+    }
+    #Root_EnglishStatistics .col-lg-push-4,
+    #Root_WelshStatistics .col-lg-push-4 {
+        left: 33.33333333%;
+    }
+    #Root_EnglishStatistics .col-lg-push-3,
+    #Root_WelshStatistics .col-lg-push-3 {
+        left: 25%;
+    }
+    #Root_EnglishStatistics .col-lg-push-2,
+    #Root_WelshStatistics .col-lg-push-2 {
+        left: 16.66666667%;
+    }
+    #Root_EnglishStatistics .col-lg-push-1,
+    #Root_WelshStatistics .col-lg-push-1 {
+        left: 8.33333333%;
+    }
+    #Root_EnglishStatistics .col-lg-push-0,
+    #Root_WelshStatistics .col-lg-push-0 {
+        left: auto;
+    }
+    #Root_EnglishStatistics .col-lg-offset-12,
+    #Root_WelshStatistics .col-lg-offset-12 {
+        margin-left: 100%;
+    }
+    #Root_EnglishStatistics .col-lg-offset-11,
+    #Root_WelshStatistics .col-lg-offset-11 {
+        margin-left: 91.66666667%;
+    }
+    #Root_EnglishStatistics .col-lg-offset-10,
+    #Root_WelshStatistics .col-lg-offset-10 {
+        margin-left: 83.33333333%;
+    }
+    #Root_EnglishStatistics .col-lg-offset-9,
+    #Root_WelshStatistics .col-lg-offset-9 {
+        margin-left: 75%;
+    }
+    #Root_EnglishStatistics .col-lg-offset-8,
+    #Root_WelshStatistics .col-lg-offset-8 {
+        margin-left: 66.66666667%;
+    }
+    #Root_EnglishStatistics .col-lg-offset-7,
+    #Root_WelshStatistics .col-lg-offset-7 {
+        margin-left: 58.33333333%;
+    }
+    #Root_EnglishStatistics .col-lg-offset-6,
+    #Root_WelshStatistics .col-lg-offset-6 {
+        margin-left: 50%;
+    }
+    #Root_EnglishStatistics .col-lg-offset-5,
+    #Root_WelshStatistics .col-lg-offset-5 {
+        margin-left: 41.66666667%;
+    }
+    #Root_EnglishStatistics .col-lg-offset-4,
+    #Root_WelshStatistics .col-lg-offset-4 {
+        margin-left: 33.33333333%;
+    }
+    #Root_EnglishStatistics .col-lg-offset-3,
+    #Root_WelshStatistics .col-lg-offset-3 {
+        margin-left: 25%;
+    }
+    #Root_EnglishStatistics .col-lg-offset-2,
+    #Root_WelshStatistics .col-lg-offset-2 {
+        margin-left: 16.66666667%;
+    }
+    #Root_EnglishStatistics .col-lg-offset-1,
+    #Root_WelshStatistics .col-lg-offset-1 {
+        margin-left: 8.33333333%;
+    }
+    #Root_EnglishStatistics .col-lg-offset-0,
+    #Root_WelshStatistics .col-lg-offset-0 {
+        margin-left: 0%;
+    }
+}
+#Root_EnglishStatistics .clearfix:before,
+#Root_WelshStatistics .clearfix:before,
+#Root_EnglishStatistics .clearfix:after,
+#Root_WelshStatistics .clearfix:after,
+#Root_EnglishStatistics .container:before,
+#Root_WelshStatistics .container:before,
+#Root_EnglishStatistics .container:after,
+#Root_WelshStatistics .container:after,
+#Root_EnglishStatistics .container-fluid:before,
+#Root_WelshStatistics .container-fluid:before,
+#Root_EnglishStatistics .container-fluid:after,
+#Root_WelshStatistics .container-fluid:after,
+#Root_EnglishStatistics .row:before,
+#Root_WelshStatistics .row:before,
+#Root_EnglishStatistics .row:after,
+#Root_WelshStatistics .row:after {
+    content: " ";
+    display: table;
+}
+#Root_EnglishStatistics .clearfix:after,
+#Root_WelshStatistics .clearfix:after,
+#Root_EnglishStatistics .container:after,
+#Root_WelshStatistics .container:after,
+#Root_EnglishStatistics .container-fluid:after,
+#Root_WelshStatistics .container-fluid:after,
+#Root_EnglishStatistics .row:after,
+#Root_WelshStatistics .row:after {
+    clear: both;
+}
+#Root_EnglishStatistics .center-block,
+#Root_WelshStatistics .center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#Root_EnglishStatistics .pull-right,
+#Root_WelshStatistics .pull-right {
+    float: right !important;
+}
+#Root_EnglishStatistics .pull-left,
+#Root_WelshStatistics .pull-left {
+    float: left !important;
+}
+#Root_EnglishStatistics .hide,
+#Root_WelshStatistics .hide {
+    display: none !important;
+}
+#Root_EnglishStatistics .show,
+#Root_WelshStatistics .show {
+    display: block !important;
+}
+#Root_EnglishStatistics .invisible,
+#Root_WelshStatistics .invisible {
+    visibility: hidden;
+}
+#Root_EnglishStatistics .text-hide,
+#Root_WelshStatistics .text-hide {
+    font: 0/0 a;
+    color: transparent;
+    text-shadow: none;
+    background-color: transparent;
+    border: 0;
+}
+#Root_EnglishStatistics .hidden,
+#Root_WelshStatistics .hidden {
+    display: none !important;
+}
+#Root_EnglishStatistics .affix,
+#Root_WelshStatistics .affix {
+    position: fixed;
 }

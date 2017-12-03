@@ -1,0 +1,45 @@
+@import "../_core/_config.less";
+
+/*-----------------------------------------
+     QUESTIONS AND ANSWERS.LESS
+-----------------------------------------*/
+
+
+.exercise {
+
+
+    &.questions {
+
+        &>li {
+            overflow: hidden;
+        }
+
+        .text-box h4 {
+            margin:0;
+        }
+
+        .answers {
+            overflow: hidden;
+            float:right;
+
+
+            &>li {
+                float:left;
+                margin-left:10px;
+                cursor:pointer;
+
+                &:hover {
+
+                    background-color:@alpha-color;
+                    color:@light-color;
+
+                }
+                &.selected {
+                    background-color:@alpha-color;
+                    color:@light-color;
+                }
+            }
+        }
+    }
+
+}

@@ -1,0 +1,56 @@
+@import "../_core/_config.less";
+
+/*-----------------------------------------
+          CONDENSED MENU.LESS
+-----------------------------------------*/
+
+
+.condensed-menu {
+    height:0;
+    overflow: hidden;
+    z-index: 102;
+    width:100%;
+
+    background-color: #fff;
+    border-bottom:3px solid @alpha-color;
+
+
+    li {
+        overflow: hidden;
+
+        a {
+            font-family: @font-bold;
+            padding:5px 10px 5px 5px;
+            margin-bottom:5px;
+            background-color:@backwash;
+            display:block;
+            width:100%;
+            text-align: right;
+            color:#000;
+
+            &:hover {
+                background-color: @alpha-color;
+                color:#fff;
+            }
+        }
+    }
+}
+
+#hamburger-menu {
+
+    .close-icon{
+        display:none;
+    }
+
+    &.active {
+
+        .menu-icon {
+            display:none;
+        }
+
+        .close-icon {
+            display:block;
+        }
+
+    }
+}
