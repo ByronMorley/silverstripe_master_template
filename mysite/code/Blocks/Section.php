@@ -39,7 +39,7 @@ class Section extends DataObject
 
     public function populateDefaults()
     {
-        $this->Title = $this->ClassName . " " . $this->RunningTotal();
+        $this->Title = $this->ClassName;//. " " . $this->RunningTotal();
         parent::populateDefaults();
     }
 
