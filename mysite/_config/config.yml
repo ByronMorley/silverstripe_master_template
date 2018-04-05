@@ -11,12 +11,6 @@ SiteTree:
 SiteConfig:
   extensions:
     - Translatable
-MemberLoginForm:
-  extensions:
-    - CustomMemberLoginForm
-Member:
-  extensions:
-    - CustomMember
 
 ---
 After: 'silverstripe-mailgun'

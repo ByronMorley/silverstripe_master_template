@@ -51,3 +51,7 @@ if (Director::isTest()) {
 	SS_Log::add_writer(new SS_LogFileWriter(dirname(__FILE__).'/errors.log'),SS_Log::ERR);
 	SS_Log::add_writer(new SS_LogFileWriter(dirname(__FILE__).'/notice.log'),SS_Log::NOTICE);
 }
+
+
+Object::useCustomClass('MemberLoginForm', 'CustomMemberLoginForm');
+Object::add_extension('Member', 'CustomMember');

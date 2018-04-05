@@ -1,8 +1,8 @@
 <?php
 
 class CustomMemberLoginForm extends MemberLoginForm {
-
-    /*public function __construct($controller, $name, $fields = null, $actions = null, $checkCurrentUser = true) {
+	/*
+    public function __construct($controller, $name, $fields = null, $actions = null, $checkCurrentUser = true) {
 
         $actions = FieldList::create(
 
@@ -83,7 +83,7 @@ class CustomMemberLoginForm extends MemberLoginForm {
         // Reduce attack surface by enforcing POST requests
         $this->setFormMethod('POST', true);
 
-        parent::__construct($controller, $name, $fields, $actions);
+        parent::__construct($controller, $name, $fields, $actions, true);
 
         $this->setValidator(RequiredFields::create('Email', 'Password'));
 
