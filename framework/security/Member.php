@@ -404,10 +404,10 @@ class Member extends DataObject implements TemplateGlobalProvider {
 		} elseif ($this->config()->lock_out_after_incorrect_logins <= 0) {
 			$state = false;
 		} else {
-
-			$attempts = LoginAttempt::get()->filter($filter = array(
-				'Email' => $this->{static::config()->unique_identifier_field},
-			))->sort('Created', 'DESC')->limit($this->config()->lock_out_after_incorrect_logins);
+			$email = $this->{static::config()->unique_identifier_field};
+			$attempts = LoginAttempt::getByEmail($email)
+				->sort('Created', 'DESC')
+				->limit($this->config()->lock_out_after_incorrect_logins);
 
 			if ($attempts->count() < $this->config()->lock_out_after_incorrect_logins) {
 				$state = false;
@@ -894,7 +894,7 @@ class Member extends DataObject implements TemplateGlobalProvider {
 			$id = Session::get("loggedInAs");
 		}
 
-		return is_numeric($id) ? $id : 0;
+		return is_numeric($id) ? (int) $id : 0;
 	}
 	private static $_already_tried_to_auto_log_in = false;
 
@@ -984,8 +984,7 @@ class Member extends DataObject implements TemplateGlobalProvider {
 			$encryption_details = Security::encrypt_password(
 				$this->Password, // this is assumed to be cleartext
 				$this->Salt,
-				($this->PasswordEncryption) ?
-					$this->PasswordEncryption : Security::config()->password_encryption_algorithm,
+				$this->isChanged('PasswordEncryption') ? $this->PasswordEncryption : null,
 				$this
 			);
 
@@ -1828,6 +1827,37 @@ class Member_GroupSet extends ManyManyList {
 		if($this->canAddGroups(array($itemID))) {
 			parent::add($item, $extraFields);
 		}
+	}
+
+	public function removeAll() {
+		$base = ClassInfo::baseDataClass($this->dataClass());
+
+		// Remove the join to the join table to avoid MySQL row locking issues.
+		$query = $this->dataQuery();
+		$foreignFilter = $query->getQueryParam('Foreign.Filter');
+		$query->removeFilterOn($foreignFilter);
+
+		$selectQuery = $query->query();
+		$selectQuery->setSelect("\"{$base}\".\"ID\"");
+
+		$from = $selectQuery->getFrom();
+		unset($from[$this->joinTable]);
+		$selectQuery->setFrom($from);
+		$selectQuery->setOrderBy(); // ORDER BY in subselects breaks MS SQL Server and is not necessary here
+		$selectQuery->setDistinct(false);
+
+		// Use a sub-query as SQLite does not support setting delete targets in
+		// joined queries.
+		$delete = new SQLDelete();
+		$delete->setFrom("\"{$this->joinTable}\"");
+		// Use ManyManyList::foreignIDFilter() rather than the one in this class
+		// otherwise we end up selecting the wrong columns
+		$delete->addWhere(parent::foreignIDFilter());
+		$subSelect = $selectQuery->sql($parameters);
+		$delete->addWhere(array(
+			"\"{$this->joinTable}\".\"{$this->localKey}\" IN ($subSelect)" => $parameters
+		));
+		$delete->execute();
 	}
 
 	/**

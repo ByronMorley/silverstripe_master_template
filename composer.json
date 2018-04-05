@@ -28,7 +28,12 @@
     "undefinedoffset/silverstripe-nocaptcha": "0.2.*",
     "tractorcow/silverstripe-dynamiccache": "4.1.*",
     "silverstripe/translatable": "2.2.*@dev",
-    "tractorcow/silverstripe-colorpicker": "^3.0"
+    "tractorcow/silverstripe-colorpicker": "^3.0",
+    "kinglozzer/silverstripe-mailgunner": "3.0",
+    "php-http/curl-client": "^1.7",
+    "guzzlehttp/psr7": "^1.4",
+    "silverstripe/display-logic": "^1.5",
+    "praxisnetau/silverstripe-moderno-admin": "^1.1"
   },
   "require-dev": {
     "phpunit/PHPUnit": "~3.7@stable"

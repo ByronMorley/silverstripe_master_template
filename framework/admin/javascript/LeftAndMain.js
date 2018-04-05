@@ -73,7 +73,7 @@ jQuery.noConflict();
 		$(window).on("message", function(e) {
 			var target,
 				event = e.originalEvent,
-				data = typeof event.data === 'object' ? event.data : JSON.parse(event.data);
+				data = typeof event.data === 'object' ? event.data : event.data ? JSON.parse(event.data) : {};
 
 			// Reject messages outside of the same origin
 			if($.path.parseUrl(window.location.href).domain !== $.path.parseUrl(event.origin).domain) return;
@@ -1334,7 +1334,6 @@ jQuery.noConflict();
 				}
 
 				var container = this.closest('.cms-container');
-				container.find('.cms-edit-form').tabs('select',0);  //always switch to the first tab (list view) when searching
 				container.loadPanel(url, "", {}, true);
 
 				return false;

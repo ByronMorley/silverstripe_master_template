@@ -1050,7 +1050,7 @@ class Versioned extends DataExtension implements TemplateGlobalProvider {
 		$oldMode = self::get_reading_mode();
 		self::reading_stage('Stage');
 
-		$list = DataObject::get(get_class($this->owner), $filter, $sort, $join, $limit);
+		$list = DataObject::get(ClassInfo::baseDataClass($this->owner), $filter, $sort, $join, $limit);
 		if($having) $having = $list->having($having);
 
 		$query = $list->dataQuery()->query();
@@ -1100,7 +1100,7 @@ class Versioned extends DataExtension implements TemplateGlobalProvider {
 		$fromRecord = Versioned::get_version($this->owner->class, $this->owner->ID, $from);
 		$toRecord = Versioned::get_version($this->owner->class, $this->owner->ID, $to);
 
-		$diff = new DataDifferencer($fromRecord, $toRecord);
+		$diff = DataDifferencer::create($fromRecord, $toRecord);
 
 		return $diff->diffedData();
 	}

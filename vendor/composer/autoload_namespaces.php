@@ -6,4 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
+    'Zend_' => array($baseDir . '/framework/thirdparty/Zend'),
+    'SilverStripe\\' => array($baseDir . '/framework/src'),
+    'Mailgun' => array($vendorDir . '/mailgun/mailgun-php/src'),
 );

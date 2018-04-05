@@ -45,7 +45,21 @@ class MemberTest extends FunctionalTest {
 		parent::tearDown();
 	}
 
-
+	public function testPasswordEncryptionUpdatedOnChangedPassword()
+	{
+		Config::inst()->update('Security', 'password_encryption_algorithm', 'none');
+		$member = Member::create();
+		$member->SetPassword = 'password';
+		$member->write();
+		$this->assertEquals('password', $member->Password);
+		$this->assertEquals('none', $member->PasswordEncryption);
+		Config::inst()->update('Security', 'password_encryption_algorithm', 'blowfish');
+		$member->SetPassword = 'newpassword';
+		$member->write();
+		$this->assertNotEquals('password', $member->Password);
+		$this->assertNotEquals('newpassword', $member->Password);
+		$this->assertEquals('blowfish', $member->PasswordEncryption);
+	}
 
 	/**
 	 * @expectedException ValidationException
@@ -94,28 +108,6 @@ class MemberTest extends FunctionalTest {
 		);
 	}
 
-	public function testDefaultPasswordEncryptionDoesntChangeExistingMembers() {
-		$member = new Member();
-		$member->Password = 'mypassword';
-		$member->PasswordEncryption = 'sha1_v2.4';
-		$member->write();
-
-		$origAlgo = Security::config()->password_encryption_algorithm;
-		Security::config()->password_encryption_algorithm = 'none';
-
-		$member->Password = 'mynewpassword';
-		$member->write();
-
-		$this->assertEquals(
-			$member->PasswordEncryption,
-			'sha1_v2.4'
-		);
-		$result = $member->checkPassword('mynewpassword');
-		$this->assertTrue($result->valid());
-
-		Security::config()->password_encryption_algorithm = $origAlgo;
-	}
-
 	public function testKeepsEncryptionOnEmptyPasswords() {
 		$member = new Member();
 		$member->Password = 'mypassword';
@@ -126,8 +118,8 @@ class MemberTest extends FunctionalTest {
 		$member->write();
 
 		$this->assertEquals(
-			$member->PasswordEncryption,
-			'sha1_v2.4'
+			Security::config()->get('password_encryption_algorithm'),
+            $member->PasswordEncryption
 		);
 		$result = $member->checkPassword('');
 		$this->assertTrue($result->valid());
@@ -382,6 +374,35 @@ class MemberTest extends FunctionalTest {
 		$this->assertFalse(
 			$ceomember->inGroups(array($staffgroup, $managementgroup), true),
 			'inGroups() fails if no direct membership is detected on any of the passed groups (in strict mode)'
+		);
+	}
+
+	/**
+	 * Assertions to check that Member_GroupSet is functionally equivalent to ManyManyList
+	 */
+	public function testRemoveGroups()
+	{
+		$staffmember = $this->objFromFixture('Member', 'staffmember');
+
+		$staffgroup = $this->objFromFixture('Group', 'staffgroup');
+		$managementgroup = $this->objFromFixture('Group', 'managementgroup');
+
+		$this->assertTrue(
+			$staffmember->inGroups(array($staffgroup, $managementgroup)),
+			'inGroups() succeeds if a membership is detected on one of many passed groups'
+		);
+
+		$staffmember->Groups()->remove($managementgroup);
+		$this->assertFalse(
+			$staffmember->inGroup($managementgroup),
+			'member was not removed from group using ->Groups()->remove()'
+		);
+
+		$staffmember->Groups()->removeAll();
+		$this->assertEquals(
+			0,
+			$staffmember->Groups()->count(),
+			'member was not removed from all groups using ->Groups()->removeAll()'
 		);
 	}
 

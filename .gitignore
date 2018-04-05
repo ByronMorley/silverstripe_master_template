@@ -10,6 +10,8 @@ node_modules/
 # ignore all assets, need to upload seperately
 /assets/
 
+/files/
+
 # ignore build tools
 /tools/phing-metadata
 

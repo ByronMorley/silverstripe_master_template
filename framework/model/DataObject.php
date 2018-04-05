@@ -3072,8 +3072,11 @@ class DataObject extends ViewableData implements DataObjectInterface, i18nEntity
 			$relations = explode('.', $fieldName);
 			$fieldName = array_pop($relations);
 			foreach($relations as $relation) {
+				// Bail if the component is null
+				if(!$component) {
+					return null;
 				// Inspect $component for element $relation
-				if($component->hasMethod($relation)) {
+				} elseif($component->hasMethod($relation)) {
 					// Check nested method
 					$component = $component->$relation();
 				} elseif($component instanceof SS_List) {
@@ -3225,7 +3228,7 @@ class DataObject extends ViewableData implements DataObjectInterface, i18nEntity
 		$SNG = singleton($callerClass);
 
 		$cacheComponents = array($filter, $orderby, $SNG->extend('cacheKeyComponent'));
-		$cacheKey = md5(var_export($cacheComponents, true));
+		$cacheKey = md5(serialize($cacheComponents));
 
 		// Flush destroyed items out of the cache
 		if($cache && isset(DataObject::$_cache_get_one[$callerClass][$cacheKey])

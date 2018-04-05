@@ -21,7 +21,7 @@
 		"mustangostang/spyc": "^0.6.2"
 	},
 	"require-dev": {
-		"phpunit/PHPUnit": "~3.7"
+		"phpunit/phpunit": "^3 || ^4 || ^5"
 	},
 	"extra": {
 		"branch-alias": {
@@ -29,6 +29,18 @@
 		}
 	},
 	"autoload": {
-		"classmap": ["tests/behat/features/bootstrap"]
+		"psr-0": {
+			"SilverStripe\\": "src/",
+			"Zend_": "thirdparty/Zend/"
+		},
+		"classmap": [
+			"tests/behat/features/bootstrap",
+			"admin/code", "api", "cache", "cli", "control", "core", "dev", "email",  "filesystem",
+			"forms", "i18n", "model", "oembed", "parsers", "search", "security", "tasks", "view",
+			"thirdparty/php-peg", "thirdparty/simpletest", "thirdparty/zend_translate_railsyaml"
+		],
+		"exclude-from-classmap": [
+			"view/SSTemplateParser.php.inc", "dev/phpunit/PhpUnitWrapper.php", "model/fieldtypes/compat"
+		]
 	}
 }

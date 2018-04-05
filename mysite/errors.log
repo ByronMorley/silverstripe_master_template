@@ -23,3 +23,30 @@
 [17-Oct-2017 13:19:12] Warning at \framework\view\ViewableData.php line 466: correct answer limitation (http://localhost/Atebol/Projects/SWAT/www/main-menu/module-menu/module-2/scenario-3-explanation/)
 [17-Oct-2017 13:19:16] Warning at \framework\view\ViewableData.php line 466: correct answer 67 (http://localhost/Atebol/Projects/SWAT/www/main-menu/module-menu/module-2/scenario-4-explanation/)
 [17-Oct-2017 13:19:16] Warning at \framework\view\ViewableData.php line 466: correct answer problem (http://localhost/Atebol/Projects/SWAT/www/main-menu/module-menu/module-2/scenario-4-explanation/)
+[05-Apr-2018 15:28:20] Error at \framework\model\connect\DBConnector.php line 55: Uncaught SS_DatabaseException: Couldn't run query:
+
+SELECT COUNT(*)
+FROM Section
+
+Table 'ss_ss_swat.section' doesn't exist (http://localhost/SWAT/dev/build?flush=&flushtoken=88cafdab46f50666f75a032ed6cae9bc)
+[05-Apr-2018 15:29:29] Error at \framework\model\connect\DBConnector.php line 55: Uncaught SS_DatabaseException: Couldn't run query:
+
+SELECT COUNT(*)
+FROM Section
+
+Table 'ss_ss_swat.section' doesn't exist (http://localhost/SWAT/dev/build?flush=&flushtoken=9911f88f4962f1d5ea6081d56e970bd9)
+[05-Apr-2018 15:29:40] Error at \framework\model\connect\DBConnector.php line 55: Uncaught SS_DatabaseException: Couldn't run query:
+
+SELECT COUNT(*)
+FROM Section
+
+Table 'ss_ss_swat.section' doesn't exist (http://localhost/SWAT/dev/build?returnURL=%2FSWAT%2Fmain-menu)
+[05-Apr-2018 15:29:43] Error at \framework\model\connect\DBConnector.php line 55: Uncaught SS_DatabaseException: Couldn't run query:
+
+SELECT Distinct "Locale"
+
+FROM "SiteTree"
+
+GROUP BY "Locale"
+
+Table 'ss_ss_swat.sitetree' doesn't exist (http://localhost/SWAT/admin/pages)

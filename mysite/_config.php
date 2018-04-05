@@ -9,7 +9,7 @@ $project = 'mysite';
  *************************/
 
 global $database;
-$database = 'ss_swat';
+$database = 'swat';
 require_once("conf/ConfigureFromEnv.php");
 
 
@@ -39,7 +39,7 @@ if (Director::isDev()) {
 	Config::inst()->update('Email', 'send_all_emails_to', "byron@rgbsoftware.co.uk");
 	SS_Log::add_writer(new SS_LogFileWriter(dirname(__FILE__).'/errors.log'),SS_Log::ERR);
 	SS_Log::add_writer(new SS_LogFileWriter(dirname(__FILE__).'/notice.log'),SS_Log::NOTICE);
-	//Email::set_mailer(new Kinglozzer\SilverStripeMailgunner\Mailer);
+	Email::set_mailer(new Kinglozzer\SilverStripeMailgunner\Mailer);
 
 }
 
@@ -51,12 +51,3 @@ if (Director::isTest()) {
 	SS_Log::add_writer(new SS_LogFileWriter(dirname(__FILE__).'/errors.log'),SS_Log::ERR);
 	SS_Log::add_writer(new SS_LogFileWriter(dirname(__FILE__).'/notice.log'),SS_Log::NOTICE);
 }
-
-/**************************
- *      EXTENSIONS
- *************************/
-
-Object::add_extension('SiteTree', 'Translatable');
-Object::add_extension('SiteConfig', 'Translatable'); // 2.4 or newer only
-Object::useCustomClass('MemberLoginForm', 'CustomMemberLoginForm');
-Object::add_extension('Member', 'CustomMember');

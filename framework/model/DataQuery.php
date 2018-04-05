@@ -490,6 +490,7 @@ class DataQuery {
 		if($compositeFields) foreach($compositeFields as $k => $v) {
 			if((is_null($columns) || in_array($k, $columns)) && $v) {
 				$dbO = Object::create_from_string($v, $k);
+				$dbO->setTable($tableClass);
 				$dbO->addToQuery($query);
 			}
 		}
@@ -726,7 +727,7 @@ class DataQuery {
 				list($parentClass, $componentClass, $parentField, $componentField, $relationTable) = $component;
 				$parentBaseClass = ClassInfo::baseDataClass($parentClass);
 				$componentBaseClass = ClassInfo::baseDataClass($componentClass);
-				$this->query->addInnerJoin($relationTable,
+				$this->query->addLeftJoin($relationTable,
 					"\"$relationTable\".\"$parentField\" = \"$parentBaseClass\".\"ID\"");
 				if (!$this->query->isJoinedTo($componentBaseClass)) {
 				$this->query->addLeftJoin($componentBaseClass,
