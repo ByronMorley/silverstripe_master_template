@@ -1,0 +1,12 @@
+---
+Name: dynamiccacheextensions
+---
+SiteTree:
+  extensions:
+    - 'DynamicCacheDataObjectExtension'
+SiteConfig:
+  extensions:
+    - 'DynamicCacheDataObjectExtension'
+Page_Controller:
+  extensions:
+    - 'DynamicCacheControllerExtension'

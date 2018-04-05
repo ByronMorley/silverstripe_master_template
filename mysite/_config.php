@@ -8,17 +8,11 @@ $project = 'mysite';
  *       DATABASE
  *************************/
 
-global $databaseConfig;
-$databaseConfig = array(
-    'type' => 'MySQLDatabase',
-    'server' => 'localhost',
-    'username' => 'root',
-    'password' => 'Castle10',
-    'database' => 'ss_swat',
-    'path' => ''
-);
+global $database;
+$database = 'ss_swat';
+require_once("conf/ConfigureFromEnv.php");
 
-Security::setDefaultAdmin("admin","Castle10");
+
 /**************************
  *       LOCALE
  *************************/
@@ -26,9 +20,9 @@ Security::setDefaultAdmin("admin","Castle10");
 i18n::set_locale('en_GB');
 Translatable::set_default_locale('en_GB');
 Translatable::set_allowed_locales(array(
-        'cy_GB',  //Welsh
-        'en_GB',
-    )
+		'cy_GB',  //Welsh
+		'en_GB',
+	)
 );
 
 /**************************
@@ -38,36 +32,24 @@ Translatable::set_allowed_locales(array(
 FulltextSearchable::enable(array('SiteTree'));
 
 if (Director::isDev()) {
-    // Turn on all errors
-    ini_set('display_errors', 1);
-    ini_set("log_errors", 1);
-    // error_reporting(E_ERROR | E_PARSE);
-    // error_reporting(E_ALL && ~E_DEPRECATED);
-    error_reporting(E_ALL | E_STRICT);
+	// Turn on all errors
+	ini_set('display_errors', 1);
+	ini_set("log_errors", 1);
+	error_reporting(E_ALL | E_STRICT);
+	Config::inst()->update('Email', 'send_all_emails_to', "byron@rgbsoftware.co.uk");
+	SS_Log::add_writer(new SS_LogFileWriter(dirname(__FILE__).'/errors.log'),SS_Log::ERR);
+	SS_Log::add_writer(new SS_LogFileWriter(dirname(__FILE__).'/notice.log'),SS_Log::NOTICE);
+	//Email::set_mailer(new Kinglozzer\SilverStripeMailgunner\Mailer);
 
-    SS_Log::add_writer(new SS_LogFileWriter(dirname(__FILE__).'/errors.log'));
-
-    // Use Mailgun to send all emails while in DEV mode
-    // When in LIVE/TEST mode all emails will be sent via the default Mail class.
-    Email::set_mailer( new SmtpMailer() );
-
-    // SSViewer::flush_template_cache();
-    // Email::send_all_emails_to('?@platocreative.co.nz');
 }
 
 if (Director::isTest()) {
 
-    // BasicAuth::protect_entire_site();
-
-    ini_set('display_errors', 1);
-    ini_set("log_errors", 1);
-    error_reporting(E_ALL | E_STRICT);
-
-    SS_Log::add_writer(new SS_LogFileWriter(dirname(__FILE__).'/errors.log'));
-
-    // Email::set_mailer( new SmtpMailer() );
-    //Email::send_all_emails_to('?@platocreative.co.nz');
-
+	ini_set('display_errors', 1);
+	ini_set("log_errors", 1);
+	error_reporting(E_ALL | E_STRICT);
+	SS_Log::add_writer(new SS_LogFileWriter(dirname(__FILE__).'/errors.log'),SS_Log::ERR);
+	SS_Log::add_writer(new SS_LogFileWriter(dirname(__FILE__).'/notice.log'),SS_Log::NOTICE);
 }
 
 /**************************

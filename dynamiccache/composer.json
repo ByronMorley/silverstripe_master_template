@@ -1,0 +1,28 @@
+{
+	"name": "tractorcow/silverstripe-dynamiccache",
+	"description": "Silverstripe module for simple on the fly caching of dynamic content",
+	"type": "silverstripe-module",
+	"keywords": ["silverstripe", "cache", "caching", "performance"],
+	"license": "BSD-3-Clause",
+	"authors": [
+		{
+			"name": "Damian Mooyman",
+			"email": "damian.mooyman@gmail.com"
+		}
+	],
+	"support": {
+		"issues": "http://github.com/tractorcow/silverstripe-dynamiccache/issues"
+	},
+	"require": {
+		"php": "~5.4",
+		"silverstripe/framework": "3.*",
+		"silverstripe/cms": "3.*",
+		"composer/installers": "*"
+	},
+	"extra": {
+		"installer-name": "dynamiccache",
+		"branch-alias": {
+			"dev-master": "4.x-dev"
+		}
+	}
+}
